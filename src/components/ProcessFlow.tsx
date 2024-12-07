@@ -1,4 +1,3 @@
-import React from 'react';
 import { FileEdit, Users, Code, Award } from 'lucide-react';
 
 const steps = [

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const sponsors = {
   platinum: [
     { name: 'TechCorp', logo: 'https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop&crop=edges&q=80' },

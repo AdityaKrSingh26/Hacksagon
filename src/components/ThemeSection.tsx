@@ -1,4 +1,3 @@
-import React from 'react';
 import { Cpu, Brain, Leaf, Shield } from 'lucide-react';
 
 const themes = [

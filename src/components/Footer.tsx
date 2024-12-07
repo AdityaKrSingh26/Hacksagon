@@ -1,4 +1,3 @@
-import React from 'react';
 import { CircuitBoard, Github, Twitter, Linkedin, Mail } from 'lucide-react';
 
 const links = {
