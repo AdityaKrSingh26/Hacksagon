@@ -11,20 +11,22 @@ const links = {
 };
 export function Footer() {
   return (
-    <footer className="bg-black/40 pt-20 pb-10">
-      <div className="container mx-auto px-6 text-center">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 justify-center">
-          <div className="col-span-12 md:col-span-4">
-            <div className="flex flex-col items-center space-y-4 mb-4">
+    <footer className="bg-black/40 pt-10 pb-6">
+      <div className="container mx-auto px-4 md:px-6 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* Logo and Description */}
+          <div className="space-y-4">
+            <div className="flex flex-col items-center md:items-start space-y-4">
               <div className="flex items-center space-x-2">
                 <CircuitBoard className="w-8 h-8" />
-                <span className="text-2xl font-bold">Hacksagon</span>
+                <span className="text-xl md:text-2xl font-bold">Hacksagon</span>
               </div>
-              <p className="text-gray-400">
+              <p className="text-gray-400 text-sm md:text-base">
                 The premier hardware + software hackathon bringing together innovators, creators, and problem solvers.
               </p>
             </div>
-            <div className="flex justify-center space-x-4">
+            {/* Social Links */}
+            <div className="flex justify-center md:justify-start space-x-4">
               {links.social.map((social, index) => (
                 <a
                   key={index}
@@ -32,29 +34,39 @@ export function Footer() {
                   className="text-gray-400 hover:text-purple-400 transition-colors"
                   aria-label={social.name}
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-6 h-6" />
                 </a>
               ))}
             </div>
           </div>
-          <div className="col-span-6 md:col-span-4">
-            <h3 className="text-lg font-semibold mb-4 text-center md:text-left">About</h3>
-            <ul className="space-y-2 pl-0">
+
+          {/* About Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">About</h3>
+            <ul className="space-y-2">
               {links.about.map((link, index) => (
-                <li key={index} className="text-left">
-                  <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <li key={index}>
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-purple-400 transition-colors text-sm md:text-base"
+                  >
                     {link}
                   </a>
                 </li>
               ))}
             </ul>
           </div>
-          <div className="col-span-6 md:col-span-4">
-            <h3 className="text-lg font-semibold mb-4 text-center md:text-left">Support</h3>
-            <ul className="space-y-2 pl-0">
+
+          {/* Support Links */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Support</h3>
+            <ul className="space-y-2">
               {links.support.map((link, index) => (
-                <li key={index} className="text-left">
-                  <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                <li key={index}>
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-purple-400 transition-colors text-sm md:text-base"
+                  >
                     {link}
                   </a>
                 </li>
@@ -62,8 +74,10 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-800 pt-8">
-          <p className="text-gray-400">
+
+        {/* Footer Bottom */}
+        <div className="border-t border-gray-800 pt-6">
+          <p className="text-gray-400 text-sm md:text-base">
             © 2025 Hacksagon. All rights reserved.
           </p>
         </div>
@@ -71,3 +85,5 @@ export function Footer() {
     </footer>
   );
 }
+
+
