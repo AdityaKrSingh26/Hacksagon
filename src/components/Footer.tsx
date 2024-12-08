@@ -1,11 +1,12 @@
-import { CircuitBoard, Instagram, Linkedin, Globe } from 'lucide-react';
+import { CircuitBoard, Instagram, Linkedin, Globe,Facebook } from 'lucide-react';
 const links = {
   about: ['About Us', 'Past Events', 'Team'],
-  support: ['FAQ', 'Guidelines', 'Contact', 'Terms'],
+  support: ['FAQ', 'Guidelines', 'Contact'],
   social: [
     { name: 'Twitter', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/abviiitmieee' },
-    { name: 'Email', icon: Globe, url: 'https://ieee.iiitm.ac.in/' }
+    { name: 'Email', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
+    {name: 'Facebook',icon:Facebook,url:'https://www.facebook.com/abviiitmieee'}
   ]
 };
 export function Footer() {
@@ -13,7 +14,6 @@ export function Footer() {
     <footer className="bg-black/40 pt-20 pb-10">
       <div className="container mx-auto px-6 text-center">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 mb-16 justify-center">
-          {/* Brand and Description */}
           <div className="col-span-12 md:col-span-4">
             <div className="flex flex-col items-center space-y-4 mb-4">
               <div className="flex items-center space-x-2">
