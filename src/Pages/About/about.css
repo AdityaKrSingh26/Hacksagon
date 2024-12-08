@@ -1,6 +1,6 @@
 .about-container {
     display: flex;
-    align-items: flex-start; /* Aligns content to the top */
+    align-items: flex-start; 
     padding: 20px;
   }
   .about-text {
@@ -8,13 +8,13 @@
     padding: 20px;
   }
   .about-text h1 {
-    font-size: 4rem; /* Larger font size for the main heading */
+    font-size: 4rem; 
     margin-bottom: 15px;
   }
   .about-text p {
-    font-size: 1.2em; /* Standard font size for paragraph text */
-    line-height: 1.4; /* Better readability */
-    margin-bottom: 15px; /* Adds spacing between paragraphs */
+    font-size: 1.2em; 
+    line-height: 1.4; 
+    margin-bottom: 15px; 
   }
   .about-image {
     flex: 1;
@@ -27,16 +27,16 @@
   }
   .typewriter-container {
     display: inline-flex;
-    gap: 4px; /* Space between digits */
-    font-size: 3rem; /* Adjust font size as needed */
+    gap: 4px; 
+    font-size: 3rem; 
     font-weight: bold;
   } 
   .digit {
-    opacity: 0; /* Initially hidden */
-    transform: translateY(20px); /* Start position (offscreen) */
+    opacity: 0;
+    transform: translateY(20px); 
     animation: fadeIn 0.5s ease-out forwards;
   }
-  /* Apply animation delays for sequential appearance */
+  
   .digit:nth-child(1) {
     animation-delay: 1.0s;
   }
