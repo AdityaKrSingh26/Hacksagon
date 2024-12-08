@@ -9,7 +9,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-indigo-950 via-purple-900 to-violet-950 relative text-white">
+    <div className="bg-gradient-to-br from-indigo-950 via-purple-900 to-violet-950 relative text-white min-w-96">
       <Background />
       <Router>
         <div className="app flex flex-col min-h-screen relative">

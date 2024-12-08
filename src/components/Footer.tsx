@@ -3,7 +3,7 @@ const links = {
   about: ['About Us', 'Past Events', 'Team'],
   support: ['FAQ', 'Contact'],
   social: [
-    { name: 'Twitter', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
+    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/abviiitmieee' },
     { name: 'Email', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
     {name: 'Facebook',icon:Facebook,url:'https://www.facebook.com/abviiitmieee'}
