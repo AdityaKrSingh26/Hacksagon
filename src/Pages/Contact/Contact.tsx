@@ -24,14 +24,12 @@ const contacts = [
   pos: "Web Master"
 },
 ];
-
 const social = [
     { name: 'Twitter', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/abviiitmieee' },
     { name: 'Email', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
     {name: 'Facebook',icon:Facebook,url:'https://www.facebook.com/abviiitmieee'}
 ];
-
 const Contact = () => {
   return ( 
     <div className="w-2/3 mx-auto flex flex-col">
@@ -85,6 +83,5 @@ const Contact = () => {
     </div>
   );
 }
- 
 export default Contact;
 
