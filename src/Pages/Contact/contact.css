@@ -57,3 +57,50 @@
 .card-back {
   transform: rotateX(180deg);
 }
+
+/* Add to contact.css */
+
+/* Keyframe for letter jumping animation */
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-text {
+  display: inline-block;
+  font-size: 2.5rem; /* Adjust size as needed */
+  font-weight: bold;
+}
+
+.animate-text span {
+  display: inline-block;
+  animation: jump 1s ease-in-out forwards;
+  opacity: 1; /* Ensure visibility */
+}
+
+.animate-text span:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.animate-text span:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.animate-text span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+/* Add more delay to each subsequent letter if needed */
