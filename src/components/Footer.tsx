@@ -80,7 +80,6 @@ export function Footer() {
             </ul>
           </div>
         </div>
-
         {/* Copyright */}
         <div className="border-t border-gray-800 pt-8">
           <p className="text-center text-gray-400">
