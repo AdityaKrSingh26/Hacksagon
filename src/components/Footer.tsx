@@ -1,7 +1,7 @@
 import { CircuitBoard, Instagram, Linkedin, Globe,Facebook } from 'lucide-react';
 const links = {
   about: ['About Us', 'Past Events', 'Team'],
-  support: ['FAQ', 'Guidelines', 'Contact'],
+  support: ['FAQ', 'Contact'],
   social: [
     { name: 'Twitter', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/abviiitmieee' },
