@@ -87,9 +87,6 @@ const Contact = () => {
     </div>
   );
 }
-<<<<<<< HEAD
-export default Contact;
-=======
->>>>>>> 63f3b73c1a401bbcbc57938496308466abecf393
+
 
 export default Contact;
