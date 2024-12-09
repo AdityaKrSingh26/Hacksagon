@@ -1,7 +1,7 @@
 import { CircuitBoard, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import './Navbar.css'; 
+import './Navbar.css';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,18 +21,16 @@ export function Navbar() {
 
   return (
     <nav className="container mx-auto px-6 py-6 z-10 text-white">
-      
       <div className="flex items-center justify-between">
-     
         <div className="flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-1">
             <CircuitBoard className="w-6 h-6" />
             <span className="text-2xl font-bold">Hacksagon</span>
           </Link>
         </div>
 
-
-        <div className="hidden sm:flex space-x-8">
+        {/* For large screens */}
+        <div className="hidden sm:flex navbar-links">
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
           <Link to="/prizes" className="hover:text-purple-300 transition-colors">Prizes</Link>
@@ -40,18 +38,18 @@ export function Navbar() {
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
         </div>
 
-
+        {/* Register Now Button (Hidden on smaller screens) */}
         <div className="hidden sm:block">
           <Link
             to="https://unstop.com/"
             target="_blank"
-            className="bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center"
+            className=" register-btn bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center"
           >
             Register Now
           </Link>
         </div>
 
- 
+        {/* Hamburger Menu (Mobile View) */}
         <div className="sm:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -70,6 +68,7 @@ export function Navbar() {
         </div>
       </div>
 
+      {/* Mobile Register Now Button */}
       <div className="mt-4 sm:hidden w-full">
         <Link
           to="https://unstop.com/"
@@ -80,6 +79,7 @@ export function Navbar() {
         </Link>
       </div>
 
+      {/* Dropdown Menu for Mobile */}
       {isOpen && (
         <div
           ref={dropdownRef}
