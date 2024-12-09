@@ -21,24 +21,35 @@ export function HeroContent() {
           style={{ animationDelay: '1.5s' }} />
       </div>
 
-      <div className={`max-w-3xl transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
+      <div className={`max-w-3xl transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
         <div className="mb-4 inline-flex items-center px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20">
           <span className="animate-pulse mr-2 w-2 h-2 rounded-full bg-purple-500"></span>
           <span className="text-purple-400">Registration Now Open</span>
         </div>
+        
+        <div className="flex flex-wrap md:flex-nowrap">
+          <div className="w-full md:w-1/2">
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
+                Hardware
+              </span>{' '}
+              Meets{' '}
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400">
+                Software
+              </span>
+              <br />
+              <span className="typewriter inline-block">Innovation</span>
+            </h1>
+          </div>
 
-        <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
-            Hardware
-          </span>{' '}
-          Meets{' '}
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400">
-            Software
-          </span>
-          <br />
-          <span className="typewriter inline-block">Innovation</span>
-        </h1>
+          <div className="w-full md:w-1/2 md:absolute md:right-0 md:top-0 md:translate-x-full">
+            <img
+              src="./Images/Hacksagon_white.png"
+              alt="Innovation"
+              className="w-full md:w-96 md:h-auto md:object-contain" // Increased image width
+            />
+          </div>
+        </div>
 
         <p className="text-xl mb-8 text-gray-300 leading-relaxed">
           Join 300+ hackers for 48 hours of creation, innovation, and breakthrough solutions.
@@ -61,3 +72,6 @@ export function HeroContent() {
     </div>
   );
 }
+
+
+
