@@ -3,16 +3,16 @@ import { Instagram, Linkedin, Globe, Facebook } from 'lucide-react';
 
 const contacts = [
   {
-    name: "Disha",
+    name: "Disha Kwatra",
     phone: "+91 8295459359",
-    email: "img_2023000@iiitm.ac.in",
+    email: "img_2023020@iiitm.ac.in",
     path: "./Images/profiles/disha.jpg",
     pos: "Vice-Chair person"
   },
   {
     name: "Advait Mulmule",
     phone: "+91 7620672917",
-    email: "imt_2023000@iiitm.ac.in",
+    email: "imt_2023006@iiitm.ac.in",
     path: "./Images/profiles/advait.jpg",
     pos: "Vice - Secretary"
   },
@@ -33,8 +33,8 @@ const social = [
 const Contact = () => {
   return (
     <div className="w-2/3 mx-auto flex flex-col">
-      <h1 className="text-4xl mt-10 pb-6 border-b text-center font-bold animate-text">
-        {["C", "o", "n", "t", "a", "c", "t", " ", "U", "s", "!"].map((letter, index) => (
+      <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
+        {["C", "o", "n", "t", "a", "c", "t", "\u00A0", "U", "s", "!"].map((letter, index) => (
           <span key={index}>{letter}</span>
         ))}
       </h1>
@@ -74,8 +74,10 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex md:flex-col mx-auto my-10 md:w-full">
-        <h1 className="text-2xl md:text-3xl md:pb-2 my-auto pr-4 md:p-0 md:border-b text-center font-bold">Our Social accounts!</h1>
-        <div className="w-full border-l md:border-none md:flex md:justify-evenly">
+      <h1
+  className="text-4xl md:text-5xl md:pb-2 my-auto pr-4 md:p-0 md:border-b text-center font-bold animate-fade-in-bounce"
+>Our Social accounts!</h1>
+  <div className="w-full border-l md:border-none md:flex md:justify-evenly">
           {social.map((app) => (
             <a className="flex p-2" href={app.url} key={app.name}>
               <app.icon />
@@ -87,6 +89,5 @@ const Contact = () => {
     </div>
   );
 }
-
 
 export default Contact;
