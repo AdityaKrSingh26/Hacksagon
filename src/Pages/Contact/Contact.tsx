@@ -1,6 +1,5 @@
 import "./contact.css";
 import { Instagram, Linkedin, Globe, Facebook } from 'lucide-react';
-
 const contacts = [
   {
     name: "Disha Kwatra",
@@ -89,5 +88,4 @@ const Contact = () => {
     </div>
   );
 }
-
 export default Contact;

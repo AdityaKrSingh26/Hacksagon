@@ -42,10 +42,10 @@ function About() {
     <div className="about-container flex flex-wrap px-4 md:px-6 py-10 md:py-16">
       <div className="about-text w-full md:w-1/2 pr-0 md:pr-6 mb-8 md:mb-0">
   <div className="flex flex-col md:flex-row items-center justify-center md:justify-start leading-tight">
-    <h1 className="text-4.75xl md:text-6.5xl font-bold mb-4 md:mb-0 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400">
+    <h1 className="text-5xl md:text-6.5xl font-bold mb-4 md:mb-0 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400">
       Hacksagon
     </h1>
-    <h1 className="text-5xl md:text-7xl font-bold ml-0 md:ml-4 mt-2 md:mt-0 typewriter-container text-center md:text-left">
+    <h1 className="text-6xl md:text-7xl font-bold typewriter-container inline-block ml-2">
       <span className="digit block md:inline">2</span>
       <span className="digit block md:inline">0</span>
       <span className="digit block md:inline">2</span>
