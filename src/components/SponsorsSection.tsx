@@ -1,92 +1,108 @@
 import React, { useState, useEffect } from "react";
 
+const sponsors = [
+  {
+    title: "Event Sponsor",
+    amount: "≥₹100,000",
+    benefits: [
+      "At our social media",
+      "Holdings at the entrance of the event",
+      "Featured on our website",
+    ],
+    iconClass: "fas fa-star",
+  },
+  {
+    title: "Platinum Sponsor",
+    amount: "≥₹75,000",
+    benefits: [
+      "Prominent branding on stage",
+      "Recognition during opening ceremony",
+      "Social media posts",
+    ],
+    iconClass: "fas fa-gem",
+  },
+  {
+    title: "Diamond Sponsor",
+    amount: "≥₹50,000",
+    benefits: [
+      "Logo on event materials",
+      "Shout-out in our newsletter",
+      "Dedicated booth space",
+    ],
+    iconClass: "fas fa-diamond",
+  },
+  {
+    title: "Gold Sponsor",
+    amount: "≥₹25,000",
+    benefits: ["Branding on digital banners", "Website mention"],
+    iconClass: "fas fa-trophy",
+  },
+  {
+    title: "Silver Sponsor",
+    amount: "≥₹10,000",
+    benefits: ["Acknowledgment in the event program"],
+    iconClass: "fas fa-medal",
+  },
+];
+
 export const SponsorsSection: React.FC = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);
   const sponsorsPricingText = "Sponsors Pricing";
-  
+
   useEffect(() => {
-    // Interval to show each letter one by one
     const interval = setInterval(() => {
-      setText((prevText) => prevText + sponsorsPricingText[index]);
-      setIndex((prevIndex) => prevIndex + 1);
-    }, 400); // 200ms delay for each letter
+      if (index < sponsorsPricingText.length) {
+        setText((prev) => prev + sponsorsPricingText[index]);
+        setIndex((prev) => prev + 1);
+      }
+    }, 200);
 
-    // Clear the interval when the whole text is shown
-    if (index === sponsorsPricingText.length) {
-      clearInterval(interval);
-    }
-
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, [index, sponsorsPricingText]);
 
   return (
-    <section id="sponsors" className="py-20 relative overflow-hidden">
-      <div className="container mx-auto px-6 relative">
-        
+    <>
+      {/* Sponsors Title and Line */}
+      <div className="w-full text-center py-8 bg-black/20">
+        <h4 className="text-4xl md:text-5xl font-bold text-white">{text}</h4>
+      </div>
 
-        {/* Sponsors Pricing Title */}
-        <h2
-          className="text-6xl font-extrabold mb-16 text-center"
-          style={{
-            color: "#FFFFFF",
-            zIndex: 1,
-            animation: "floatFromLeft 3s ease-in-out",
-          }}
-        >
-          {text}
-        </h2>
-         {/* Full-width line */}
-        <div className="w-full border-t-4 border-gray-300 my-8"></div>
-        <div className="space-y-16">
-          {/* Event Sponsor */}
-          <div>
-            <h3 className="text-3xl text-purple-400 font-semibold mb-8 text-center">Event Sponsor</h3>
-            <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
-              <div className="bg-white/5 rounded-lg p-6 flex items-center justify-center hover:bg-white/10 transition-colors">
-                <p className="text-4xl font-bold text-center">≥₹100,000</p>
+      {/* Sponsors Section */}
+      <section id="sponsors" className="py-16 bg-black/20 w-full">
+        <div className="container mx-auto px-4 md:px-6 max-w-screen-xl">
+          {/* Grid Layout for Sponsors */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {sponsors.map((sponsor, index) => (
+              <div
+                key={index}
+                className="bg-purple-800/40 rounded-xl p-6 shadow-lg hover:bg-purple-700/40 transition-colors"
+              >
+                <div className="flex flex-col items-start">
+                  {/* Icon */}
+                  <i
+                    className={`${sponsor.iconClass} text-purple-400 text-4xl mb-4`}
+                  ></i>
+                  {/* Title */}
+                  <h5 className="text-3xl md:text-2xl font-bold text-white mb-2">
+                    {sponsor.title}
+                  </h5>
+                  {/* Amount */}
+                  <p className="text-4xl md:text-3xl font-bold text-white mb-4">
+                    {sponsor.amount}
+                  </p>
+                  {/* Benefits */}
+                  <ul className="list-disc list-inside text-gray-300 text-sm md:text-base">
+                    {sponsor.benefits.map((benefit, index) => (
+                      <li key={index}>{benefit}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
-          {/* Platinum Sponsor */}
-          <div>
-            <h3 className="text-3xl text-purple-400 font-semibold mb-8 text-center">Platinum Sponsor</h3>
-            <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
-              <div className="bg-white/5 rounded-lg p-6 flex items-center justify-center hover:bg-white/10 transition-colors">
-                <p className="text-4xl font-bold text-center">≥₹75,000</p>
-              </div>
-            </div>
-          </div>
-          {/* Diamond Sponsor */}
-          <div>
-            <h3 className="text-3xl text-purple-400 font-semibold mb-8 text-center">Diamond Sponsor</h3>
-            <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
-              <div className="bg-white/5 rounded-lg p-6 flex items-center justify-center hover:bg-white/10 transition-colors">
-                <p className="text-4xl font-bold text-center"> ≥₹50,000</p>
-              </div>
-            </div>
-          </div>
-          {/* Gold Sponsor */}
-          <div>
-            <h3 className="text-3xl text-purple-400 font-semibold mb-8 text-center">Gold Sponsor</h3>
-            <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
-              <div className="bg-white/5 rounded-lg p-6 flex items-center justify-center hover:bg-white/10 transition-colors">
-                <p className="text-4xl font-bold text-center">≥₹25,000</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Silver Sponsor */}
-          <div>
-            <h3 className="text-3xl text-purple-400 font-semibold mb-8 text-center">Silver Sponsor</h3>
-            <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
-              <div className="bg-white/5 rounded-lg p-6 flex items-center justify-center hover:bg-white/10 transition-colors">
-                <p className="text-4xl font-bold text-center">≥₹10,000</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
