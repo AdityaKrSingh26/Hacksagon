@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact/Contact"
 import { Background } from './components/Background';
 import { Navbar } from './components/Navbar';
 import { Footer } from "./components/Footer";
+import Themes from "./Pages/Themes/Themes";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/sponsors" element={<Sponsors />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/themes" element={<Themes />} />
             </Routes>
           </div>
           <Footer />

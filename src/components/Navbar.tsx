@@ -33,7 +33,7 @@ export function Navbar() {
         <div className="hidden sm:flex navbar-links">
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
-          <Link to="/prizes" className="hover:text-purple-300 transition-colors">Prizes</Link>
+          <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
         </div>
@@ -87,7 +87,7 @@ export function Navbar() {
         >
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
-          <Link to="/prizes" className="hover:text-purple-300 transition-colors">Prizes</Link>
+          <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
         </div>
