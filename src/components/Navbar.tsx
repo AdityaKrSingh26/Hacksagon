@@ -1,4 +1,4 @@
-import { CircuitBoard, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
