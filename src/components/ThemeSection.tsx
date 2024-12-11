@@ -65,7 +65,7 @@ export function ThemeSection() {
             </Link>
           ))}
         </div>
-        <h3 className="text-center opacity-60 text-md">Select theme to see details</h3>
+        <h3 className="text-center opacity-60 text-md mt-3">Select theme to see details</h3>
       </div>
     </section>
   );

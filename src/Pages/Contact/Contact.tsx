@@ -57,8 +57,8 @@ const Contact = () => {
                   <div className="card-inner">
                     <div className="card-front">
                       <img className="w-10 h-10 m-4 rounded-full" src={contact.path} alt="" />
-                      <p className="hidden md:flex">{contact.name} |<span className="opacity-50"> Hover to see details</span></p>
-                      <p className="md:hidden">{contact.name} |<span className="opacity-50"> Click to see details</span></p>
+                      <p className="hidden md:flex">{contact.name} |<span className="opacity-50 ml-1"> Hover to see details</span></p>
+                      <p className="md:hidden">{contact.name} |<span className="opacity-50 ml-1"> Click to see details</span></p>
                     </div>
                     <div className="card-back p-2 md:pl-8 md:flex align-middle">
                       <p className="text-sm md:text-xl md:inline-block">{contact.pos}</p>

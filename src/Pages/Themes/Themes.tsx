@@ -1,5 +1,5 @@
 import { Cpu, Brain, Leaf, Shield } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 const themes = [
   {
@@ -63,6 +63,16 @@ const themes = [
 ];
 
 const Themes = () => {
+  const [expanded, setExpanded] = useState(Array(themes.length).fill(false));
+
+  const toggleDetails = (index) => {
+    setExpanded((prevState) => {
+      const newState = [...prevState];
+      newState[index] = !newState[index];
+      return newState;
+    });
+  };
+
   useEffect(() => {
     const hash = window.location.hash.substring(1); // Extract the ID from the URL hash
     if (hash) {
@@ -84,17 +94,30 @@ const Themes = () => {
       <h2 className="text-4xl font-bold mb-4 text-center">Themes</h2>
       {themes.map((theme, index) => (
         <section
-          id={`${index}`}
           key={index}
           className="bg-white/5 backdrop-blur-sm rounded-xl p-6 hover:bg-white/10 w-full m-4 flex flex-col transition-colors duration-500"
         >
           <h3 className="text-xl font-semibold mb-2">{theme.title}</h3>
           <p className="text-gray-400">{theme.description}</p>
-          <p className="text-gray-400">{theme.details}</p>
+          <div
+            className={`transition-[max-height] duration-500 ease-in-out overflow-hidden`}
+            style={{
+              maxHeight: expanded[index] ? '200px' : '0', // Adjust '200px' to match your content's height
+            }}
+          >
+            <p className="text-gray-400 mt-2">{theme.details}</p>
+          </div>
+          <button
+            className="text-blue-500 mt-2 underline"
+            onClick={() => toggleDetails(index)}
+          >
+            {expanded[index] ? 'Read Less' : 'Read More'}
+          </button>
         </section>
       ))}
     </div>
   );
-}
+};
+
 
 export default Themes;

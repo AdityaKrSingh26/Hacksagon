@@ -25,7 +25,7 @@ const stats = [
 
 export function Stats() {
   return (
-    <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div className="my-12 grid grid-cols-2 md:grid-cols-4 gap-6">
       {stats.map((stat, index) => (
         <div 
           key={index} 
