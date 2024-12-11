@@ -1,33 +1,32 @@
-import React from 'react';
-import { CircuitBoard, Github, Twitter, Linkedin, Mail } from 'lucide-react';
-
+import { CircuitBoard, Instagram, Linkedin, Globe,Facebook } from 'lucide-react';
 const links = {
-  about: ['About Us', 'Past Events', 'Team', 'Careers'],
-  support: ['FAQ', 'Guidelines', 'Contact', 'Terms'],
-  legal: ['Privacy Policy', 'Terms of Service', 'Code of Conduct'],
+  about: ['About Us', 'Past Events', 'Team'],
+  support: ['FAQ', 'Contact'],
   social: [
-    { name: 'GitHub', icon: Github, url: '#' },
-    { name: 'Twitter', icon: Twitter, url: '#' },
-    { name: 'LinkedIn', icon: Linkedin, url: '#' },
-    { name: 'Email', icon: Mail, url: '#' }
+    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
+    { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/abviiitmieee' },
+    { name: 'Email', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
+    {name: 'Facebook',icon:Facebook,url:'https://www.facebook.com/abviiitmieee'}
   ]
 };
-
 export function Footer() {
   return (
-    <footer className="bg-black/40 pt-20 pb-10">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-12 gap-8 mb-16">
-          {/* Brand and Description */}
-          <div className="col-span-2 md:col-span-4">
-            <div className="flex items-center space-x-2 mb-4">
-              <CircuitBoard className="w-8 h-8" />
-              <span className="text-2xl font-bold">Hacksagon</span>
+    <footer className="bg-black/40 pt-10 pb-6">
+      <div className="container mx-auto px-4 md:px-6 text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          {/* Logo and Description */}
+          <div className="space-y-4">
+            <div className="flex flex-col items-center md:items-start space-y-4">
+              <div className="flex items-center space-x-2">
+                <CircuitBoard className="w-8 h-8" />
+                <span className="text-xl md:text-2xl font-bold">Hacksagon</span>
+              </div>
+              <p className="text-gray-400 text-sm md:text-base">
+                The premier hardware + software hackathon bringing together innovators, creators, and problem solvers.
+              </p>
             </div>
-            <p className="text-gray-400 mb-4">
-              The premier hardware + software hackathon bringing together innovators, creators, and problem solvers.
-            </p>
-            <div className="flex space-x-4">
+            {/* Social Links */}
+            <div className="flex justify-center md:justify-start space-x-4">
               {links.social.map((social, index) => (
                 <a
                   key={index}
@@ -35,19 +34,22 @@ export function Footer() {
                   className="text-gray-400 hover:text-purple-400 transition-colors"
                   aria-label={social.name}
                 >
-                  <social.icon className="w-5 h-5" />
+                  <social.icon className="w-6 h-6" />
                 </a>
               ))}
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="col-span-1 md:col-span-2">
+          {/* About Links */}
+          <div>
             <h3 className="text-lg font-semibold mb-4">About</h3>
             <ul className="space-y-2">
               {links.about.map((link, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-purple-400 transition-colors text-sm md:text-base"
+                  >
                     {link}
                   </a>
                 </li>
@@ -55,25 +57,16 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="col-span-1 md:col-span-2">
+          {/* Support Links */}
+          <div>
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               {links.support.map((link, index) => (
                 <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="col-span-1 md:col-span-2">
-            <h3 className="text-lg font-semibold mb-4">Legal</h3>
-            <ul className="space-y-2">
-              {links.legal.map((link, index) => (
-                <li key={index}>
-                  <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                  <a
+                    href="#"
+                    className="text-gray-400 hover:text-purple-400 transition-colors text-sm md:text-base"
+                  >
                     {link}
                   </a>
                 </li>
@@ -82,13 +75,15 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-gray-800 pt-8">
-          <p className="text-center text-gray-400">
-            © {new Date().getFullYear()} Hacksagon. All rights reserved.
+        {/* Footer Bottom */}
+        <div className="border-t border-gray-800 pt-6">
+          <p className="text-gray-400 text-sm md:text-base">
+            © 2025 Hacksagon. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
   );
 }
+
+

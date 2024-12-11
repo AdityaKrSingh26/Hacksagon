@@ -1,8 +1,6 @@
-import React from 'react';
-
 export function Background() {
   return (
-    <div className="absolute inset-0 overflow-hidden">
+    <div className="absolute inset-0 overflow-hidden z-0">
       {/* Animated hexagons */}
       <div className="absolute w-full h-full">
         {[...Array(6)].map((_, i) => (

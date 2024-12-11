@@ -1,5 +1,3 @@
-import React from 'react';
-
 const dates = [
   {
     date: 'February 1, 2024',

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Calendar, Users, Trophy, Cpu } from 'lucide-react';
 
 const stats = [

@@ -1,0 +1,62 @@
+.about-container {
+    display: flex;
+    align-items: flex-start; 
+    padding: 20px;
+  }
+  .about-text {
+    flex: 1;
+    padding: 20px;
+  }
+  .about-text h1 {
+    font-size: 4rem; 
+    margin-bottom: 15px;
+  }
+  .about-text p {
+    font-size: 1.2em; 
+    line-height: 1.4; 
+    margin-bottom: 15px; 
+  }
+  .about-image {
+    flex: 1;
+    padding-left: 250px;
+  }
+  .about-image img {
+    width: 75%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .typewriter-container {
+    display: inline-flex;
+    gap: 4px; 
+    font-size: 3rem; 
+    font-weight: bold;
+  } 
+  .digit {
+    opacity: 0;
+    transform: translateY(20px); 
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+  
+  .digit:nth-child(1) {
+    animation-delay: 1.0s;
+  }
+  .digit:nth-child(2) {
+    animation-delay: 2.0s;
+  }
+  .digit:nth-child(3) {
+    animation-delay: 3.0s;
+  }
+  .digit:nth-child(4) {
+    animation-delay: 4.0s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
