@@ -18,7 +18,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex flex-col items-center md:items-start space-y-4">
               <div className="flex items-center space-x-2">
-                <img className="w-6" src=".\Images\Hacksagon_white.png" alt="" />
+                <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="" />
                 <span className="text-xl md:text-2xl font-bold">Hacksagon</span>
               </div>
               <p className="text-gray-400 text-sm md:text-base">

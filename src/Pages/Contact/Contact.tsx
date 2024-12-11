@@ -5,21 +5,21 @@ const contacts = [
     name: "Disha Kwatra",
     phone: "+91 8295459359",
     email: "img_2023020@iiitm.ac.in",
-    path: "./Images/profiles/disha.jpg",
+    path: "https://i.postimg.cc/1z6vfqph/disha.jpg",
     pos: "Vice-Chair person"
   },
   {
     name: "Advait Mulmule",
     phone: "+91 7620672917",
     email: "imt_2023006@iiitm.ac.in",
-    path: "./Images/profiles/advait.jpg",
+    path: "https://i.postimg.cc/wTT403dL/advait.jpg",
     pos: "Vice - Secretary"
   },
   {
     name: "Dhrushit Jain",
     phone: "+91 8657232444",
     email: "bcs_2023019@iiitm.ac.in",
-    path: "./Images/profiles/dhrushit.jpg",
+    path: "https://i.postimg.cc/QdF4ZPCM/dhrushit.jpg",
     pos: "Web Master"
   },
 ];

@@ -7,6 +7,7 @@ import { Background } from './components/Background';
 import { Navbar } from './components/Navbar';
 import { Footer } from "./components/Footer";
 import Themes from "./Pages/Themes/Themes";
+import Schedule from "./Pages/Schedule/Schedule"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               <Route path="/sponsors" element={<Sponsors />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/themes" element={<Themes />} />
+              <Route path="/schedule" element={<Schedule/>} />
             </Routes>
           </div>
           <Footer />
