@@ -1,62 +1,86 @@
-.about-container {
-    display: flex;
-    align-items: flex-start; 
-    padding: 20px;
+/* General styles */
+.about-title {
+  display: flex;
+  flex-direction: column; /* Default stack vertically */
+  align-items: center;
+  text-align: center;
+}
+
+/* Adjust for screens >= 768px */
+@media (min-width: 768px) {
+  .about-title {
+    flex-direction: row; /* Align Hacksagon and 2025 horizontally */
+    align-items: center;
+    text-align: left;
+    justify-content: center; /* Center align on medium screens */
   }
-  .about-text {
-    flex: 1;
-    padding: 20px;
+  .digit-container {
+    gap: 0.2rem; /* Reduce space between digits for alignment */
   }
-  .about-text h1 {
-    font-size: 4rem; 
-    margin-bottom: 15px;
+}
+
+/* Adjust for screens >= 960px */
+@media (min-width: 960px) {
+  .about-title {
+    flex-direction: row;
+    justify-content: flex-start; /* Align text to the left on larger screens */
   }
-  .about-text p {
-    font-size: 1.2em; 
-    line-height: 1.4; 
-    margin-bottom: 15px; 
+  .digit-container {
+    margin-left: 1rem; /* Add some spacing for clarity */
   }
-  .about-image {
-    flex: 1;
-    padding-left: 250px;
+}
+
+/* Ensuring visibility for Hacksagon text */
+.text-hacksagon {
+  font-size: 5rem; /* Set a large default size */
+  line-height: 1.2; /* Adjust line height */
+  visibility: visible; /* Ensure text visibility */
+  white-space: nowrap; /* Prevent wrapping */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; /* Use gradient */
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+  .text-hacksagon {
+    font-size: 4rem; /* Adjust size for mid-range screens */
+    color: inherit; /* Ensure gradient or default color is used */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); /* Add shadow for better visibility */
   }
-  .about-image img {
-    width: 75%;
-    height: auto;
-    border-radius: 8px;
+  .digit-container {
+    align-items: center; /* Ensure digits align properly */
   }
-  .typewriter-container {
-    display: inline-flex;
-    gap: 4px; 
-    font-size: 3rem; 
-    font-weight: bold;
-  } 
-  .digit {
+}
+
+/* Animation for 2025 digits */
+.digit {
+  display: inline-block;
+  font-size: inherit; /* Keep the size consistent */
+  opacity: 0;
+  transform: translateY(20px); /* Start position */
+  animation: digitFadeIn 0.6s ease-out forwards;
+}
+
+.digit:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.digit:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.digit:nth-child(3) {
+  animation-delay: 0.9s;
+}
+.digit:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+@keyframes digitFadeIn {
+  0% {
     opacity: 0;
-    transform: translateY(20px); 
-    animation: fadeIn 0.5s ease-out forwards;
+    transform: translateY(20px);
   }
-  
-  .digit:nth-child(1) {
-    animation-delay: 1.0s;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .digit:nth-child(2) {
-    animation-delay: 2.0s;
-  }
-  .digit:nth-child(3) {
-    animation-delay: 3.0s;
-  }
-  .digit:nth-child(4) {
-    animation-delay: 4.0s;
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+}
