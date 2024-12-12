@@ -56,7 +56,7 @@ export function HeroContent() {
 
           <div className="w-full md:w-1/2 flex justify-center md:justify-end">
             <img
-              src="./Images/Hacksagon_white.png"
+              src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png"
               alt="Innovation"
               className="w-40 sm:w-75 md:w-80 xl:w-180 2xl:w-[32rem] object-contain md:translate-x-0 xl:translate-x-80 2xl:translate-x-28"
             />
