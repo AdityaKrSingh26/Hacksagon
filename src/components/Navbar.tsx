@@ -1,4 +1,4 @@
-import { CircuitBoard, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
@@ -24,7 +24,7 @@ export function Navbar() {
       <div className="flex items-center justify-between">
         <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-1">
-            <CircuitBoard className="w-6 h-6" />
+            <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="" />
             <span className="text-2xl font-bold">Hacksagon</span>
           </Link>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const sponsors = [
   {
@@ -46,26 +46,12 @@ const sponsors = [
 ];
 
 export const SponsorsSection: React.FC = () => {
-  const [text, setText] = useState("");
-  const [index, setIndex] = useState(0);
-  const sponsorsPricingText = "Sponsors Pricing";
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (index < sponsorsPricingText.length) {
-        setText((prev) => prev + sponsorsPricingText[index]);
-        setIndex((prev) => prev + 1);
-      }
-    }, 200);
-
-    return () => clearInterval(interval);
-  }, [index, sponsorsPricingText]);
 
   return (
     <>
       {/* Sponsors Title and Line */}
       <div className="w-full text-center py-8 bg-black/20">
-        <h4 className="text-4xl md:text-5xl font-bold text-white">{text}</h4>
+        <h4 className="text-4xl md:text-5xl font-bold text-white">Sponsors Pricing</h4>
       </div>
 
       {/* Sponsors Section */}
