@@ -3,7 +3,7 @@ import React from "react";
 const sponsors = [
   {
     title: "Event Sponsor",
-    amount: "≥₹100,000",
+    amount: "\u2265\u20b9100,000",
     benefits: [
       "At our social media",
       "Holdings at the entrance of the event",
@@ -13,7 +13,7 @@ const sponsors = [
   },
   {
     title: "Platinum Sponsor",
-    amount: "≥₹75,000",
+    amount: "\u2265\u20b975,000",
     benefits: [
       "Prominent branding on stage",
       "Recognition during opening ceremony",
@@ -23,7 +23,7 @@ const sponsors = [
   },
   {
     title: "Diamond Sponsor",
-    amount: "≥₹50,000",
+    amount: "\u2265\u20b950,000",
     benefits: [
       "Logo on event materials",
       "Shout-out in our newsletter",
@@ -33,20 +33,31 @@ const sponsors = [
   },
   {
     title: "Gold Sponsor",
-    amount: "≥₹25,000",
+    amount: "\u2265\u20b925,000",
     benefits: ["Branding on digital banners", "Website mention"],
     iconClass: "fas fa-trophy",
   },
   {
     title: "Silver Sponsor",
-    amount: "≥₹10,000",
+    amount: "\u2265\u20b910,000",
     benefits: ["Acknowledgment in the event program"],
     iconClass: "fas fa-medal",
   },
 ];
-
+const sponsorLogos = [
+  "https://i.postimg.cc/mkPhppTr/kitek.png",
+  "https://i.postimg.cc/MGX7J56h/advance-tech.png",
+  "https://i.postimg.cc/6p8rDz5F/techno-scientific.png",
+  "https://i.postimg.cc/9X4J3W8L/enthutech.png",
+  "https://i.postimg.cc/xCLGCdwQ/chess.png",
+  "https://i.postimg.cc/tJycRwmr/hellointern.png",
+  "https://i.postimg.cc/dQxdYrkC/bugsee.png",
+  "https://i.postimg.cc/bwznPhHG/jupiter.png",
+  "https://i.postimg.cc/NMYqJdww/voltfraction.png",
+  "https://i.postimg.cc/N0nbLMpC/iiitian.png",
+  "https://i.postimg.cc/Cxzq54XY/codingblok.png"
+];
 export const SponsorsSection: React.FC = () => {
-
   return (
     <>
       {/* Sponsors Title and Line */}
@@ -88,7 +99,71 @@ export const SponsorsSection: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
-    </>
+      </section>   
+     {/* Our Previous Sponsors Section */}
+<div className="w-full text-center py-8 bg-black/20">
+<h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
+        {["O", "u", "r", "\u00A0", "P", "r", "e", "v", "i", "o", "u","s","\u00A0","S","p","o","n","s","o","r","s"].map((letter, index) => (
+          <span key={index}>{letter}</span>
+        ))}
+      </h1>
+  <div className="container mx-auto px-4 md:px-6 max-w-screen-xl mt-8">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {sponsorLogos.map((logo, index) => {
+        const rowNumber = Math.floor(index / 4);
+        const delay = rowNumber * 0.75; 
+        return (
+          <div
+            key={index}
+            className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md animate-float hover:scale-110 transition-transform duration-300"
+            style={{
+              animationDelay: `${delay}s`, 
+              animationDuration: "2s", 
+            }}
+          >
+            <img
+              src={logo}
+              alt={`Sponsor ${index + 1}`}
+              className="w-auto h-auto max-w-[200px] max-h-[120px] object-contain scale-[1.2]"
+            />
+          </div>
+        );
+      })}
+    </div>
+  </div>
+</div>
+<style>{`
+  @keyframes float {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-float {
+    animation-name: float;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; /* Retain the final state */
+    animation-iteration-count: 1; /* Play only once */
+  }
+
+  .hover\:scale-110:hover {
+    transform: scale(1.1); /* Enlarge the logo slightly */
+  }
+
+  .transition-transform {
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+`}</style>
+  </>
   );
 };
+
