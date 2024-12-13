@@ -15,6 +15,15 @@ const SoftwareThemes = () => {
     });
   };
 
+  const renderWithLineBreaks = (text: string) => {
+    return text.split("\n").map((line, index) => (
+      <span key={index}>
+        {line}
+        <br />
+      </span>
+    ));
+  };
+
   return (
     <div className="w-full md:w-2/5">
       <h2 className="text-4xl font-bold mb-4 text-center">
@@ -42,7 +51,7 @@ const SoftwareThemes = () => {
           >
             <section
               className={`bg-white/5 backdrop-blur-sm rounded-xl p-6 hover:bg-white/10 w-full m-4 flex flex-col transition-all duration-500
-                ${expanded[index] ? "h-auto" : "h-40"}  
+                ${expanded[index] ? "h-auto" : "h-52 md:h-40"}  
               `}
             >
               <div className="flex items-center">
@@ -53,10 +62,10 @@ const SoftwareThemes = () => {
               <div
                 className="transition-[max-height] duration-500 ease-in-out overflow-hidden"
                 style={{
-                  maxHeight: expanded[index] ? "200px" : "0", // Adjust max-height for details
+                  maxHeight: expanded[index] ? "2000px" : "0",
                 }}
               >
-                <p className="text-gray-400 mt-2">{track.details}</p>
+                <p className="text-gray-400 mt-2 leading-tight">{renderWithLineBreaks(track.details)}</p>
               </div>
               <button
                 className="text-blue-500 mt-2 underline"
