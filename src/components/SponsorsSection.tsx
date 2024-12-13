@@ -45,17 +45,17 @@ const sponsors = [
   },
 ];
 const sponsorLogos = [
-  "https://i.postimg.cc/mkPhppTr/kitek.png",
-  "https://i.postimg.cc/MGX7J56h/advance-tech.png",
-  "https://i.postimg.cc/6p8rDz5F/techno-scientific.png",
-  "https://i.postimg.cc/9X4J3W8L/enthutech.png",
-  "https://i.postimg.cc/xCLGCdwQ/chess.png",
-  "https://i.postimg.cc/tJycRwmr/hellointern.png",
-  "https://i.postimg.cc/dQxdYrkC/bugsee.png",
-  "https://i.postimg.cc/bwznPhHG/jupiter.png",
-  "https://i.postimg.cc/NMYqJdww/voltfraction.png",
-  "https://i.postimg.cc/N0nbLMpC/iiitian.png",
-  "https://i.postimg.cc/Cxzq54XY/codingblok.png"
+  "https://i.postimg.cc/y8BTjTs0/kitek.jpg",
+  "https://i.postimg.cc/VLZyQ2TY/advance-tech.jpg",
+  "https://i.postimg.cc/MpPjB0T6/techno-scientific.jpg",
+  "https://i.postimg.cc/XY8XKjDV/enthutech.jpg",
+  "https://i.postimg.cc/8CH943hQ/chess.jpg",
+  "https://i.postimg.cc/nc1ngdK2/hellointern.jpg",
+  "https://i.postimg.cc/Dz21rYvX/bugsee.jpg",
+  "https://i.postimg.cc/QMf9D8p6/jupiter.jpg",
+  "https://i.postimg.cc/kg0qLDYN/voltfraction.jpg",
+  "https://i.postimg.cc/pLgcZv96/iiitian.jpg",
+  "https://i.postimg.cc/Kzczpdwn/codingblok.jpg"
 ];
 export const SponsorsSection: React.FC = () => {
   return (
