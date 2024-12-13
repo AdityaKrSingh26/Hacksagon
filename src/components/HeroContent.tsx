@@ -1,8 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Stats } from './Stats';
-import { CircuitBoard, Cpu, Zap } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import {
+  CircuitBoard,
+  Cpu,
+  Zap
+} from 'lucide-react';
 
 export function HeroContent() {
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -28,18 +34,17 @@ export function HeroContent() {
       </div>
 
       <div
-        className={`max-w-3xl transition-all duration-1000 transform ${
-          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+        className={`max-w-3xl transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
       >
         <div className="mb-4 inline-flex items-center px-3 py-1 sm:px-4 sm:py-2 rounded-full bg-purple-500/10 border border-purple-500/20">
           <span className="animate-pulse mr-2 w-2 h-2 rounded-full bg-purple-500"></span>
           <span className="text-purple-400 text-sm sm:text-base">
-            Registration Now Open
+            Registrations Opening Soon
           </span>
         </div>
 
-        <div className="flex flex-col md:flex-row items-start md:items-center md:space-x-8 xl:space-x-5 justify-between">
+        <div className="w-full flex flex-col md:flex-row items-start md:items-center md:space-x-8 xl:space-x-5 justify-between">
           <div className="w-full md:w-1/2">
             <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 leading-snug sm:leading-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
@@ -64,18 +69,28 @@ export function HeroContent() {
         </div>
 
         <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-gray-300 leading-relaxed">
-          Join 300+ hackers for 48 hours of creation, innovation, and
+          Join 300+ hackers for 36 hours of creation, innovation, and
           breakthrough solutions. Build the future at the intersection of
           hardware and software.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-12">
-          <button className="group relative px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500">
-            <span className="relative z-10">Apply Now</span>
-            <div className="absolute inset-0 rounded-full bg-white/20 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <button
+            className="group relative px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500"
+          >
+            <a
+              href="https://unstop.com/"
+              target="_blank"
+            >
+              <span className="relative z-10">Apply Now</span>
+              <div className="absolute inset-0 rounded-full bg-white/20 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </a>
           </button>
 
-          <button className="relative px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold text-sm sm:text-lg border-2 border-purple-500 hover:bg-purple-500/10 transition-colors">
+          <button
+            onClick={() => { navigate('/about') }}
+            className="relative px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold text-sm sm:text-lg border-2 border-purple-500 hover:bg-purple-500/10 transition-colors"
+          >
             Learn More
           </button>
         </div>

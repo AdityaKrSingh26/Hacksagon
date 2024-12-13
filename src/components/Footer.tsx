@@ -1,14 +1,30 @@
-import { Instagram, Linkedin, Globe,Facebook } from 'lucide-react';
+import {
+  Instagram,
+  Linkedin,
+  Globe,
+  Facebook
+} from 'lucide-react';
+
+
 const links = {
-  about: ['About Us', 'Past Events', 'Team'],
-  support: ['FAQ', 'Contact'],
+  about: [
+    { name: 'About Us', url: '/about' },
+    { name: 'Past Events', url: 'https://ieee.iiitm.ac.in/events/' },
+    { name: 'Team', url: 'https://ieee.iiitm.ac.in/members/' }
+  ],
+  support: [
+    { name: 'FAQ', url: '/faq' },
+    { name: 'Contact', url: '/contact' }
+  ],
   social: [
     { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/abviiitmieee' },
     { name: 'Email', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
-    {name: 'Facebook',icon:Facebook,url:'https://www.facebook.com/abviiitmieee'}
+    { name: 'Facebook', icon: Facebook, url: 'https://www.facebook.com/abviiitmieee' }
   ]
 };
+
+
 export function Footer() {
   return (
     <footer className="bg-black/40 pt-10 pb-6">
@@ -18,7 +34,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex flex-col items-center md:items-start space-y-4">
               <div className="flex items-center space-x-2">
-                <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="" />
+                <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="Hacksagon Logo" />
                 <span className="text-xl md:text-2xl font-bold">Hacksagon</span>
               </div>
               <p className="text-gray-400 text-sm md:text-base">
@@ -47,10 +63,10 @@ export function Footer() {
               {links.about.map((link, index) => (
                 <li key={index}>
                   <a
-                    href="#"
+                    href={link.url}
                     className="text-gray-400 hover:text-purple-400 transition-colors text-sm md:text-base"
                   >
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               ))}
@@ -64,10 +80,10 @@ export function Footer() {
               {links.support.map((link, index) => (
                 <li key={index}>
                   <a
-                    href="#"
+                    href={link.url}
                     className="text-gray-400 hover:text-purple-400 transition-colors text-sm md:text-base"
                   >
-                    {link}
+                    {link.name}
                   </a>
                 </li>
               ))}
@@ -85,5 +101,3 @@ export function Footer() {
     </footer>
   );
 }
-
-
