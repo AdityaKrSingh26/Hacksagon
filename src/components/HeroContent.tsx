@@ -6,7 +6,7 @@ import {
   Cpu,
   Zap
 } from 'lucide-react';
-import "./HeroContent.css"
+
 export function HeroContent() {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
@@ -34,7 +34,7 @@ export function HeroContent() {
       </div>
 
       <div
-        className={`max-w-3xl transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+        className={`max-w-5xl transition-all duration-1000 transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
           }`}
       >
         <div className="mb-4 inline-flex items-center px-3 py-1 sm:px-4 sm:py-2 rounded-full bg-purple-500/10 border border-purple-500/20">
@@ -59,17 +59,16 @@ export function HeroContent() {
             </h1>
           </div>
 
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-          <img
-  src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png"
-  alt="Innovation"
-  className="w-80 sm:w-75 md:w-80 xl:w-180 2xl:w-[32rem] object-contain custom-img"
-/>
-
+          <div className="w-full md:w-1/2 flex justify-center">
+            <img
+              src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png"
+              alt="Innovation"
+              className="w-40 sm:w-75 md:w-80 xl:w-180 object-contain md:translate-x-0 xl:translate-x-80 2xl:translate-x-28"
+            />
           </div>
         </div>
 
-        <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-gray-300 leading-relaxed">
+        <p className="text-base max-w-3xl sm:text-lg md:text-xl mb-6 sm:mb-8 text-gray-300 leading-relaxed">
           Join 300+ hackers for 36 hours of creation, innovation, and
           breakthrough solutions. Build the future at the intersection of
           hardware and software.
