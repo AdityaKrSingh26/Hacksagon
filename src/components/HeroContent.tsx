@@ -63,7 +63,7 @@ export function HeroContent() {
           <img
   src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png"
   alt="Innovation"
-  className="w-40 sm:w-75 md:w-80 xl:w-180 2xl:w-[32rem] object-contain custom-img"
+  className="w-80 sm:w-75 md:w-80 xl:w-180 2xl:w-[32rem] object-contain custom-img"
 />
 
           </div>

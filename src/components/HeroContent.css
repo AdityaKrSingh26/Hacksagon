@@ -7,8 +7,14 @@
   @media (min-width: 1280px) {
     .custom-img {
       position: absolute;
-      right: -300px;
+      right: -220px;
       top: 0; 
     }
   }
-  
+  @media (max-width: 675px) and (min-width: 440px) {
+    .custom-img {
+      width: 80%; 
+      max-width: 480px; 
+    }
+  }
+   
