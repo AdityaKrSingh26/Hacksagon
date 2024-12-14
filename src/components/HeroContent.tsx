@@ -44,7 +44,7 @@ export function HeroContent() {
           </span>
         </div>
 
-        <div className="w-full flex flex-col md:flex-row items-start md:items-center md:space-x-8 xl:space-x-5 justify-between">
+        <div className="w-full md:w-11/12 flex flex-col md:flex-row items-start md:items-center justify-between">
           <div className="w-full md:w-1/2">
             <h1 className="text-5xl sm:text-5xl md:text-7xl font-bold mb-4 sm:mb-6 leading-snug sm:leading-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500">
