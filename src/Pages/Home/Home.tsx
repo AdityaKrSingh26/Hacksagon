@@ -1,6 +1,7 @@
 import { HeroContent } from '../../components/HeroContent';
 import { ThemeSection } from '../../components/ThemeSection';
 import { ProcessFlow } from '../../components/ProcessFlow';
+import { Prizes } from '../../components/Prizes';
 import { EligibilitySection } from '../../components/EligibilitySection';
 import { useEffect } from 'react';
 
@@ -14,6 +15,7 @@ function HomePage() {
                 <HeroContent />
             </div>
             <ThemeSection />
+            <Prizes />
             <ProcessFlow />
             <EligibilitySection />
         </div>

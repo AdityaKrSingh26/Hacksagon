@@ -7,7 +7,7 @@ import {
   Shield, 
   Globe 
 } from "lucide-react";
-
+import { Link } from "react-router-dom"; // Import Link for routing
 
 const reasons = [
   {
@@ -46,7 +46,6 @@ const reasons = [
       "Join like-minded research enthusiasts and collaborate to find optimized solutions.",
   },
 ];
-
 
 function About() {
   return (
@@ -92,9 +91,19 @@ function About() {
           </div>
         </div>
       </section>
+      <div className="text-center mt-8 text-white fa-align-center">
+        <p>
+          To know more about us , visit our
+          <Link 
+            to="/contact" 
+            className="text-purple-400 hover:text-pink-500 transition-colors ml-1"
+          >
+            Contact Us
+          </Link> page.
+        </p>
+      </div>
     </div>
   );
 }
-
 
 export default About;

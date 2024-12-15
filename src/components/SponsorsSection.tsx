@@ -1,5 +1,5 @@
 import React from "react";
-
+import {PdfViewer} from "./PdfViewer";
 const sponsors = [
   {
     title: "Event Sponsor",
@@ -101,37 +101,63 @@ export const SponsorsSection: React.FC = () => {
         </div>
       </section>   
      {/* Our Previous Sponsors Section */}
-<div className="w-full text-center py-8 bg-black/20">
-<h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
-        {["O", "u", "r", "\u00A0", "P", "r", "e", "v", "i", "o", "u","s","\u00A0","S","p","o","n","s","o","r","s"].map((letter, index) => (
-          <span key={index}>{letter}</span>
-        ))}
-      </h1>
+     <div className="w-full text-center py-8 bg-black/20">
+  <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
+    {[ "P", "a", "s", "t", "\u00A0", "S", "p", "o", "n", "s", "o", "r", "s"].map((letter, index) => (
+      <span key={index}>{letter}</span>
+    ))}
+  </h1>
   <div className="container mx-auto px-4 md:px-6 max-w-screen-xl mt-8">
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
       {sponsorLogos.map((logo, index) => {
         const rowNumber = Math.floor(index / 4);
-        const delay = rowNumber * 0.75; 
+        const delay = rowNumber * 0.75;
         return (
           <div
             key={index}
             className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md animate-float hover:scale-110 transition-transform duration-300"
             style={{
-              animationDelay: `${delay}s`, 
-              animationDuration: "2s", 
+              animationDelay: `${delay}s`,
+              animationDuration: "2s",
             }}
           >
             <img
               src={logo}
               alt={`Sponsor ${index + 1}`}
-              className="w-auto h-auto max-w-[200px] max-h-[120px] object-contain scale-[1.2]"
+              className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
             />
           </div>
         );
       })}
     </div>
   </div>
+  <br></br>
+  <br></br>
 </div>
+
+{/* Rectangle Block */}
+{/* Rectangle Block */}
+<div className="text-center py-8 flex justify-center items-center">
+  <div className="max-w-xl bg-purple-700 text-white p-6 rounded-lg text-center">
+    <p className="text-lg md:text-xl font-semibold">
+      All skill levels are welcome! Whether you're a beginner or an expert, Hacksagon is the perfect place to learn, collaborate, and build something amazing.
+    </p>
+  </div>
+</div>
+
+{/* Ensure the parent section has a consistent background */}
+<div className="text-center">
+  <a
+    href="https://jmp.sh/s/o6VvHQDkD5p3XuOTa9kl"
+    download
+    className="bg-purple-700 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition-colors"
+  >
+    Download Sponsorship Details (PDF)
+  </a>
+</div>
+<PdfViewer/>
+
+
 <style>{`
   @keyframes float {
     0% {
@@ -163,7 +189,6 @@ export const SponsorsSection: React.FC = () => {
     transition: transform 0.3s ease; /* Smooth transition */
   }
 `}</style>
-  </>
+    </>
   );
 };
-

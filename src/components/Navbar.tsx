@@ -37,7 +37,6 @@ export function Navbar() {
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
         </div>
-
         {/* Register Now Button (Hidden on smaller screens) */}
         <div className="hidden sm:block">
           <Link
