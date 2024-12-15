@@ -41,7 +41,7 @@ export const ContactSection = () => {
             {questions[currentIndex].split("").map((char, idx) => (
               <motion.span
                 key={`${currentIndex}-${idx}`}
-                className="inline-block relative"
+                className="relative"
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
                 transition={{ delay: 5, duration: 0.3 }}
@@ -49,17 +49,18 @@ export const ContactSection = () => {
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  transition={{ delay: idx * 0.04 }}
+                  transition={{ delay: idx * 0.04, duration: 0 }}
                 >{char}</motion.span>
 
                 <motion.span
-                  className="absolute bottom-0 top-0 left-[1px] right-0 bg-white"
+                  className="absolute bottom-[3px] top-[3px] left-[1px] right-0 bg-white"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: [0, 1, 0] }}
                   transition={{
                     delay: idx * 0.04,
                     duration: 0.2,
                     times: [0, 0.2, 1],
+                    ease: "easeInOut"
                   }}
                 />
               </motion.span>
