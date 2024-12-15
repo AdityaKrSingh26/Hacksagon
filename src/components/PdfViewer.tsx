@@ -1,3 +1,5 @@
+import { ContactSection } from "./contactus-bottom";
+
 export function PdfViewer() {
     return (
    <div>
@@ -28,6 +30,7 @@ export function PdfViewer() {
           />
         </div>
       </div>
+        <ContactSection />
       </div>
     );
   }
