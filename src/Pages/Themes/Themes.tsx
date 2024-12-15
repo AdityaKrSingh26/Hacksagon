@@ -3,9 +3,14 @@ import HardwareThemes from "../../components/HardwareThemes";
 
 const Themes = () => {
   return (
-    <div className="flex flex-col md:flex-row overflow-hidden p-8 justify-evenly">
-      <SoftwareThemes />
-      <HardwareThemes />
+    <div>
+      <div className="flex flex-col md:flex-row overflow-hidden p-8 justify-evenly">
+        <SoftwareThemes />
+        <HardwareThemes />
+      </div>
+      <div className="w-2/5 mx-auto bg-white/5 backdrop-blur-sm rounded-xl p-6 text-xl mb-10">
+        <strong>Note: </strong> Please note that the technology stacks and challenge ideas mentioned are not mandatory; they are intended to provide an overview, guide participants in their project development, and inspire their work.
+      </div>
     </div>
   );
 };
