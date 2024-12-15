@@ -1,14 +1,14 @@
-import { Rocket, Users, Lightbulb, Code, Award, Flag } from 'lucide-react';
+import { Rocket, Users, Lightbulb, Code, Award, Flag, Clipboard, Video } from 'lucide-react';
 
 export const schedulePhases = [
   {
     phase: "Phase 1.1: Registration & Idea Submission",
     date: "20th Jan 2025 to 20th Feb 2025",
-    icon: Rocket,
+    icon: Clipboard,
     description: "Begin your journey by registering and forming your team with peers",
     events: [
       {
-        title: " Registration Opens",
+        title: "Registration Opens",
         date: "Jan 20",
         description: "Registration opens for individuals and cross-university teams"
       },
@@ -49,7 +49,7 @@ export const schedulePhases = [
         description: "Filling of mentioned details in it regarding your project and more"
       },
       {
-        title: "Form Closing ",
+        title: "Form Closing",
         date: "Mar 16",
         description: "No forms will be accepted after this date"
       }
@@ -58,7 +58,7 @@ export const schedulePhases = [
   {
     phase: "Phase 2.2: Presentation at IIITM",
     date: "1st Apr 2025 - 5th Apr 2025",
-    icon: Code,
+    icon: Video,
     description: "",
     events: [
       {
@@ -76,10 +76,9 @@ export const schedulePhases = [
   {
     phase: "Phase 2.3: Results of Round 2",
     date: "10th Apr 2024",
-    icon: Award,
-    description: "Emails will be send to the group leaders of shortlisted teams for the next round.",
-    events: [
-    ]
+    icon: Rocket,
+    description: "Emails will be sent to the group leaders of shortlisted teams for the next round.",
+    events: []
   },
   {
     phase: "Phase 3.1: Registration of Round 3",
@@ -102,22 +101,21 @@ export const schedulePhases = [
   {
     phase: "Phase 3.2: Prototype Round at IIITM",
     date: "15th May 2025",
-    icon: Flag,
+    icon: Code,
     description: "",
     events: [
       {
-        title: "24hr Hackathon Sprint ",
+        title: "24hr Hackathon Sprint",
         date: "May 15",
-        description: "Teams will come and work on their projects getting it ready for final prestation "
+        description: "Teams will come and work on their projects getting it ready for final presentation"
       }
     ]
-  },{
+  },
+  {
     phase: "Phase 3.3: Final Result",
     date: "16th May 2025",
-    icon: Flag,
+    icon: Award,
     description: "Release of final Results and Distribution of Prizes",
-    events: [
-    ]
-  },
-  
+    events: []
+  }
 ];
