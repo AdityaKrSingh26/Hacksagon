@@ -8,7 +8,7 @@ import { Navbar } from './components/Navbar';
 import { Footer } from "./components/Footer";
 import Themes from "./Pages/Themes/Themes";
 import Schedule from "./Pages/Schedule/Schedule"
-
+import { PdfViewer } from "./components/PdfViewer";
 function App() {
   return (
     <div className="bg-gradient-to-br from-indigo-950 via-purple-900 to-violet-950 relative text-white min-w-96">
@@ -24,6 +24,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/themes" element={<Themes />} />
               <Route path="/schedule" element={<Schedule/>} />
+              <Route path="/bronchure" element ={<PdfViewer/>}/>
             </Routes>
           </div>
           <Footer />

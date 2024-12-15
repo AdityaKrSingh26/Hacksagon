@@ -36,6 +36,7 @@ export function Navbar() {
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
+          <Link to="/bronchure" className="hover:text-purple-300 transition-colors">Bronchure</Link>
         </div>
         {/* Register Now Button (Hidden on smaller screens) */}
         <div className="hidden sm:block">
@@ -89,6 +90,7 @@ export function Navbar() {
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
+          <Link to="/bronchure" className='hover:text-purple-300 transition-colors'>Bronchure</Link>
         </div>
       )}
     </nav>

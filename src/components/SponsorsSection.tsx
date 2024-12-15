@@ -1,5 +1,5 @@
 import React from "react";
-import {PdfViewer} from "./PdfViewer";
+
 const sponsors = [
   {
     title: "Event Sponsor",
@@ -155,9 +155,6 @@ export const SponsorsSection: React.FC = () => {
     Download Sponsorship Details (PDF)
   </a>
 </div>
-<PdfViewer/>
-
-
 <style>{`
   @keyframes float {
     0% {

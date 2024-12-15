@@ -1,16 +1,24 @@
 export function PdfViewer() {
     return (
+   <div>
+    <div className="w-2/3 mx-auto flex flex-col">
+    <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
+    Bronchure for Hacksgon 2025
+  </h1>
+    </div>
       <div
         style={{
-          display: "flex",           // Enables flexbox
-          justifyContent: "center",  // Centers horizontally
-          alignItems: "center",      // Centers vertically
-          height: "100vh",           // Full viewport height
-          width: "100vw",            // Full viewport width
-          margin: "0",               // Remove default margin
+          display: "flex",           
+          justifyContent: "center",  
+          alignItems: "center",     
+          height: "100vh",           
+          width: "100vw",           
+          margin: "0",               
         }}
       >
-        <div style={{ height: "75vh", width: "80%" }}>
+        <div>
+        </div>
+        <div style={{ height: "90vh", width: "75%" }}>   
           <iframe
             src="https://jmp.sh/s/o6VvHQDkD5p3XuOTa9kl"
             title="PDF Viewer"
@@ -19,6 +27,7 @@ export function PdfViewer() {
             style={{ border: "none" }}
           />
         </div>
+      </div>
       </div>
     );
   }
