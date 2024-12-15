@@ -5,7 +5,7 @@ export function PdfViewer() {
    <div>
     <div className="w-2/3 mx-auto flex flex-col">
     <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
-    Bronchure for Hacksgon 2025
+    Brochure for Hacksagon 2025
   </h1>
     </div>
       <div

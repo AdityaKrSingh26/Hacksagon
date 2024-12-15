@@ -35,7 +35,7 @@ const contacts = [
 const social = [
   { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/abviiitmieee' },
-  { name: 'Email', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
+  { name: 'IEEE website', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
   { name: 'Facebook', icon: Facebook, url: 'https://www.facebook.com/abviiitmieee' }
 ];
 

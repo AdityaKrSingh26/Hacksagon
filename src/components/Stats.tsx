@@ -8,18 +8,18 @@ const stats = [
   },
   {
     icon: Users,
-    title: '300+ Hackers',
-    subtitle: 'From 50+ Schools'
+    title: '10 tracks',
+    subtitle: 'Hardware & Software'
   },
   {
     icon: Trophy,
-    title: '$20,000',
+    title: '₹2,50,000',
     subtitle: 'In Prizes'
   },
   {
     icon: Cpu,
-    title: 'Hardware Lab',
-    subtitle: 'Full Access'
+    title: '10 tracks',
+    subtitle: 'Hardware & Software'
   }
 ];
 
@@ -33,7 +33,7 @@ export function Stats() {
         >
           <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity blur-xl" />
           <div className="relative">
-            <stat.icon className="w-8 h-8 text-purple-400 mb-2 transform transition-transform group-hover:scale-110" />
+            <stat.icon className="w-8 h-8 text-purple-400 mb-2 transform transition-transform group-hover:scale-110 mx-auto" />
             <div className="font-semibold text-lg">{stat.title}</div>
             <div className="text-sm text-gray-400">{stat.subtitle}</div>
           </div>
