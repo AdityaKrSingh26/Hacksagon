@@ -131,29 +131,26 @@ export const SponsorsSection: React.FC = () => {
       })}
     </div>
   </div>
-  <br></br>
-  <br></br>
+  
 </div>
 
-{/* Rectangle Block */}
-{/* Rectangle Block */}
-<div className="text-center py-8 flex justify-center items-center">
-  <div className="max-w-xl bg-purple-700 text-white p-6 rounded-lg text-center">
-    <p className="text-lg md:text-xl font-semibold">
-      All skill levels are welcome! Whether you're a beginner or an expert, Hacksagon is the perfect place to learn, collaborate, and build something amazing.
-    </p>
-  </div>
-</div>
 
-{/* Ensure the parent section has a consistent background */}
-<div className="text-center">
+<div className="max-w-3xl mx-auto">
+<div className="mt-12 p-6 bg-purple-500/10 rounded-lg border border-purple-500/20">
+          <h3 className="text-xl font-semibold mb-4">Note :</h3>
+          <p className="text-gray-300">
+          All skill levels are welcome here! This platform offers participants a chance to gain national recognition and connect with tech enthusiasts. As a sponsor, support emerging talents while showcasing your brand to a wide, engaged audience and making a lasting impact in the tech community   </p>
+        </div>
+
+<div className="text-center mb-8 mt-8"> 
   <a
     href="https://jmp.sh/s/o6VvHQDkD5p3XuOTa9kl"
     download
-    className="bg-purple-700 text-white px-6 py-3 rounded-lg hover:bg-purple-500 transition-colors"
+    className="bg-purple-700 text-white px-8 py-3 rounded-lg hover:bg-purple-500 transition-colors"
   >
     Download Sponsorship Details (PDF)
   </a>
+</div>
 </div>
 <style>{`
   @keyframes float {
