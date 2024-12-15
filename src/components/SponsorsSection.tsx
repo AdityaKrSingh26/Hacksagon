@@ -137,11 +137,9 @@ export const SponsorsSection: React.FC = () => {
 
 <div className="max-w-3xl mx-auto">
 <div className="mt-12 p-6 bg-purple-500/10 rounded-lg border border-purple-500/20">
-          <h3 className="text-xl font-semibold mb-4">Note</h3>
+          <h3 className="text-xl font-semibold mb-4">Note :</h3>
           <p className="text-gray-300">
-            All skill levels are welcome! Whether you're a beginner or an expert, Hacksagon is the perfect place to learn, 
-            collaborate, and build something amazing.
-          </p>
+          All skill levels are welcome here! This platform offers participants a chance to gain national recognition and connect with tech enthusiasts. As a sponsor, support emerging talents while showcasing your brand to a wide, engaged audience and making a lasting impact in the tech community   </p>
         </div>
 
 <div className="text-center mb-8 mt-8"> 

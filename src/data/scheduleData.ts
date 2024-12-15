@@ -2,121 +2,122 @@ import { Rocket, Users, Lightbulb, Code, Award, Flag } from 'lucide-react';
 
 export const schedulePhases = [
   {
-    phase: "Phase 1: Registration & Team Formation",
-    date: "January 2024",
+    phase: "Phase 1.1: Registration & Idea Submission",
+    date: "20th Jan 2025 to 20th Feb 2025",
     icon: Rocket,
-    description: "Begin your journey by registering and forming your dream team",
+    description: "Begin your journey by registering and forming your team with peers",
     events: [
       {
-        title: "Early Bird Registration Opens",
-        date: "Jan 1",
-        description: "Special perks for early registrants including exclusive workshops and mentorship"
-      },
-      {
-        title: "Team Formation Workshop",
-        date: "Jan 15",
-        description: "Virtual meetup to find teammates and discuss project ideas"
+        title: " Registration Opens",
+        date: "Jan 20",
+        description: "Registration opens for individuals and cross-university teams"
       },
       {
         title: "Registration Deadline",
-        date: "Jan 31",
-        description: "Last day to register your team or as an individual participant"
+        date: "Feb 20",
+        description: "Last day to submit your project idea in PDF format"
       }
     ]
   },
   {
-    phase: "Phase 2: Skill Building",
-    date: "February 2024",
+    phase: "Phase 1.2: Idea Review and Results",
+    date: "5th March 2025",
     icon: Lightbulb,
-    description: "Enhance your skills through workshops and training sessions",
+    description: "",
     events: [
       {
-        title: "Hardware Workshop Series",
-        date: "Feb 1-15",
-        description: "Learn about Arduino, Raspberry Pi, and sensor integration"
+        title: "Format Checking & Relevancy",
+        date: "Feb 21 - Feb 28",
+        description: "Evaluation of sent pdf files"
       },
       {
-        title: "Software Development Bootcamp",
-        date: "Feb 16-28",
-        description: "Intensive training on full-stack development and IoT platforms"
+        title: "Announcement of Result",
+        date: "Mar 5",
+        description: "Leaders will receive mails of their team getting selected"
       }
     ]
   },
   {
-    phase: "Phase 3: Preparation",
-    date: "March 2024",
+    phase: "Phase 2.1: Registration of Round 2",
+    date: "6th Mar 2025- 16th Mar 2025",
     icon: Users,
-    description: "Get ready for the main event with mentorship and planning",
+    description: "",
     events: [
       {
-        title: "Mentor Matching",
-        date: "Mar 1-10",
-        description: "Connect with industry experts for project guidance"
+        title: "Form Release",
+        date: "Mar 6",
+        description: "Filling of mentioned details in it regarding your project and more"
       },
       {
-        title: "Project Planning Workshop",
-        date: "Mar 15",
-        description: "Learn about project management and timeline planning"
+        title: "Form Closing ",
+        date: "Mar 16",
+        description: "No forms will be accepted after this date"
       }
     ]
   },
   {
-    phase: "Phase 4: Main Event",
-    date: "April 2024",
+    phase: "Phase 2.2: Presentation at IIITM",
+    date: "1st Apr 2025 - 5th Apr 2025",
     icon: Code,
-    description: "48 hours of intensive hacking and building",
+    description: "",
     events: [
       {
-        title: "Opening Ceremony",
-        date: "Apr 1",
-        description: "Kickoff event with keynote speakers and challenge announcements"
+        title: "Date & Time Announcement",
+        date: "Mar 31",
+        description: "Mails will be sent to leaders of team for their video call presentation"
       },
       {
-        title: "Hackathon Sprint",
-        date: "Apr 2-3",
-        description: "48-hour main hacking period with technical support and mini-events"
-      },
-      {
-        title: "Project Submission",
-        date: "Apr 3",
-        description: "Final submission of projects and documentation"
+        title: "Presentations",
+        date: "Apr 1 - Apr 5",
+        description: "Meeting link will be shared on the day of presentation"
       }
     ]
   },
   {
-    phase: "Phase 5: Judging & Awards",
-    date: "April 2024",
+    phase: "Phase 2.3: Results of Round 2",
+    date: "10th Apr 2024",
     icon: Award,
-    description: "Present your project and celebrate achievements",
+    description: "Emails will be send to the group leaders of shortlisted teams for the next round.",
+    events: [
+    ]
+  },
+  {
+    phase: "Phase 3.1: Registration of Round 3",
+    date: "11th Apr 2025- 18th Apr 2025",
+    icon: Flag,
+    description: "",
     events: [
       {
-        title: "Project Presentations",
-        date: "Apr 4",
-        description: "Teams present their projects to judges and audience"
+        title: "Form Release for Registration",
+        date: "Apr 11",
+        description: "Teams who have secured place in final round have to fill the form. Filling their credentials to appear for final round."
       },
       {
-        title: "Awards Ceremony",
-        date: "Apr 5",
-        description: "Recognition of outstanding projects and special achievements"
+        title: "Form Closing Date",
+        date: "Apr 18",
+        description: "Last date to submit."
       }
     ]
   },
   {
-    phase: "Phase 6: Post-Event",
-    date: "May 2024",
+    phase: "Phase 3.2: Prototype Round at IIITM",
+    date: "15th May 2025",
     icon: Flag,
-    description: "Continue your journey with post-event opportunities",
+    description: "",
     events: [
       {
-        title: "Project Showcase",
-        date: "May 1",
-        description: "Online exhibition of winning projects"
-      },
-      {
-        title: "Incubation Program",
+        title: "24hr Hackathon Sprint ",
         date: "May 15",
-        description: "Selected teams begin the 3-month incubation program"
+        description: "Teams will come and work on their projects getting it ready for final prestation "
       }
     ]
-  }
+  },{
+    phase: "Phase 3.3: Final Result",
+    date: "16th May 2025",
+    icon: Flag,
+    description: "Release of final Results and Distribution of Prizes",
+    events: [
+    ]
+  },
+  
 ];

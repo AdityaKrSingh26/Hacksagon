@@ -1,4 +1,4 @@
-import { Candy,Shirt,IndianRupee,Headphones} from 'lucide-react'; // Use icons from lucide-react
+import { Candy,Shirt,IndianRupee,Headphones} from 'lucide-react'; 
 const prizes = [
   {
     icon: Shirt,
