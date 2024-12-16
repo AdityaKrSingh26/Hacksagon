@@ -85,7 +85,7 @@ const Contact = () => {
       </div>
       <div className="flex md:flex-col mx-auto my-10 md:w-full">
         <h1
-          className="text-4xl md:text-5xl my-auto pr-4 pb-8 border-b text-center font-bold"
+          className="text-4xl md:text-5xl my-auto pr-4 pb-8 md:border-b text-center font-bold"
         >
           Our Social accounts!
         </h1>
