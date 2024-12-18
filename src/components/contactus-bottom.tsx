@@ -25,10 +25,9 @@ export const ContactSection = () => {
       <div className="space-y-6 w-full max-w-lg">
 
         <header>
-          <p className="text-sm font-light uppercase mb-2">/support</p>
+          <p className="text-sm font-light uppercase mb-2">Support</p>
           <div className="border-t border-white"></div>
         </header>
-
         <div>
           <p className="text-xl leading-relaxed">
             <strong>Have questions?</strong> Contact Support!

@@ -13,8 +13,8 @@ const stats = [
   // },
   {
     icon: Users,
-    title: '10 tracks',
-    subtitle: 'Hardware & Software'
+    title: '300 Teams',
+    subtitle: 'In Competition'
   },
   {
     icon: Trophy,
