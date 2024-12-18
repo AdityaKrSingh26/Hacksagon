@@ -1,11 +1,16 @@
-import { Calendar, Users, Trophy, Cpu } from 'lucide-react';
+import { 
+  // Calendar, 
+  Users, 
+  Trophy, 
+  Cpu 
+} from 'lucide-react';
 
 const stats = [
-  {
-    icon: Calendar,
-    title: 'March 15-17',
-    subtitle: '48 Hours'
-  },
+  // {
+  //   icon: Calendar,
+  //   title: 'May 15-17',
+  //   subtitle: '36 Hours'
+  // },
   {
     icon: Users,
     title: '10 tracks',
@@ -14,7 +19,7 @@ const stats = [
   {
     icon: Trophy,
     title: '₹2,50,000',
-    subtitle: 'In Prizes'
+    subtitle: 'In Prizes and Goodies'
   },
   {
     icon: Cpu,

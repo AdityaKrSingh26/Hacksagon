@@ -79,10 +79,10 @@ export function HeroContent() {
             className="group relative px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500"
           >
             <a
-              href="https://unstop.com/"
-              target="_blank"
+              href="/"
+              // target="_blank"
             >
-              <span className="relative z-10">Apply Now</span>
+              <span className="relative z-10">Registerations Opening soon</span>
               <div className="absolute inset-0 rounded-full bg-white/20 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </a>
           </button>
