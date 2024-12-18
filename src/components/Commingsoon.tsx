@@ -1,7 +1,7 @@
 function Commingsoon() {
   return (
     <div className="flex flex-col justify-center items-center mt-20">
-        <h1 className="text-7xl my-10 md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0">
+        <h1 className="text-7xl my-10 md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0 pb-4">
             Releasing Soon
         </h1>
         <div className="digit-container flex md:md-4 md:mb-0">
