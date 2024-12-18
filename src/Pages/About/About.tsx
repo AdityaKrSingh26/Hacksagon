@@ -91,7 +91,7 @@ function About() {
           </div>
         </div>
       </section>
-      <div className="text-center mt-8 text-white fa-align-center">
+      <div className="text-center mt-8 text-white">
         <p>
           To know more about us , visit our
           <Link 

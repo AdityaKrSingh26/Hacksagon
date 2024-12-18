@@ -13,7 +13,7 @@ const links = {
     { name: 'Team', url: 'https://ieee.iiitm.ac.in/members/' }
   ],
   support: [
-    { name: 'FAQ', url: '/faq' },
+    { name: 'Brochure', url: '/brochure' },
     { name: 'Contact', url: '/contact' }
   ],
   social: [

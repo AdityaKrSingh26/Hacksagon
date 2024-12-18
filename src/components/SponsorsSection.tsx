@@ -8,6 +8,7 @@ const sponsors = [
       "At our social media",
       "Holdings at the entrance of the event",
       "Featured on our website",
+      "Event Brochures and Invitation Letters",
     ],
     iconClass: "fas fa-star",
   },
@@ -40,7 +41,10 @@ const sponsors = [
   {
     title: "Silver Sponsor",
     amount: "\u2265\u20b910,000",
-    benefits: ["Acknowledgment in the event program"],
+    benefits: [ 
+      "Acknowledgment in the event program",
+      "Logo included at prominent locations"
+    ],
     iconClass: "fas fa-medal",
   },
 ];
@@ -54,7 +58,6 @@ const sponsorLogos = [
   "https://i.postimg.cc/Dz21rYvX/bugsee.jpg",
   "https://i.postimg.cc/QMf9D8p6/jupiter.jpg",
   "https://i.postimg.cc/kg0qLDYN/voltfraction.jpg",
-  "https://i.postimg.cc/pLgcZv96/iiitian.jpg",
   "https://i.postimg.cc/Kzczpdwn/codingblok.jpg"
 ];
 export const SponsorsSection: React.FC = () => {
@@ -85,9 +88,9 @@ export const SponsorsSection: React.FC = () => {
                     {sponsor.title}
                   </h5>
                   {/* Amount */}
-                  <p className="text-4xl md:text-3xl font-bold text-white mb-4">
+                  {/* <p className="text-4xl md:text-3xl font-bold text-white mb-4">
                     {sponsor.amount}
-                  </p>
+                  </p> */}
                   {/* Benefits */}
                   <ul className="list-disc list-inside text-gray-300 text-sm md:text-base">
                     {sponsor.benefits.map((benefit, index) => (
@@ -99,90 +102,50 @@ export const SponsorsSection: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>   
-     {/* Our Previous Sponsors Section */}
-     <div className="w-full text-center py-8 bg-black/20">
-  <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
-    {[ "P", "a", "s", "t", "\u00A0", "S", "p", "o", "n", "s", "o", "r", "s"].map((letter, index) => (
-      <span key={index}>{letter}</span>
-    ))}
-  </h1>
-  <div className="container mx-auto px-4 md:px-6 max-w-screen-xl mt-8">
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
-      {sponsorLogos.map((logo, index) => {
-        const rowNumber = Math.floor(index / 4);
-        const delay = rowNumber * 0.75;
-        return (
-          <div
-            key={index}
-            className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md animate-float hover:scale-110 transition-transform duration-300"
-            style={{
-              animationDelay: `${delay}s`,
-              animationDuration: "2s",
-            }}
-          >
-            <img
-              src={logo}
-              alt={`Sponsor ${index + 1}`}
-              className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
-            />
+      </section>
+      {/* Our Previous Sponsors Section */}
+      <div className="w-full text-center py-8 bg-black/20">
+        <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
+          {["P", "a", "s", "t", "\u00A0", "S", "p", "o", "n", "s", "o", "r", "s"].map((letter, index) => (
+            <span key={index}>{letter}</span>
+          ))}
+        </h1>
+        <div className="container mx-auto px-4 md:px-6 max-w-screen-xl mt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            {sponsorLogos.map((logo, index) => {
+              return (
+                <div
+                  key={index}
+                  className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:scale-110 transition-transform duration-300"   
+                >
+                  <img
+                    src={logo}
+                    alt={`Sponsor ${index + 1}`}
+                    className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
+                  />
+                </div>
+              );
+            })}
           </div>
-        );
-      })}
-    </div>
-  </div>
-  
-</div>
-
-
-<div className="max-w-3xl mx-auto">
-<div className="mt-12 p-6 bg-purple-500/10 rounded-lg border border-purple-500/20">
-          <h3 className="text-xl font-semibold mb-4">Note :</h3>
-          <p className="text-gray-300">
-          All skill levels are welcome here! This platform offers participants a chance to gain national recognition and connect with tech enthusiasts. As a sponsor, support emerging talents while showcasing your brand to a wide, engaged audience and making a lasting impact in the tech community   </p>
         </div>
 
-<div className="text-center mb-8 mt-8"> 
-  <a
-    href="https://jmp.sh/s/o6VvHQDkD5p3XuOTa9kl"
-    download
-    className="bg-purple-700 text-white px-8 py-3 rounded-lg hover:bg-purple-500 transition-colors"
-  >
-    Download Sponsorship Details (PDF)
-  </a>
-</div>
-</div>
-<style>{`
-  @keyframes float {
-    0% {
-      transform: translateY(30px);
-      opacity: 0;
-    }
-    50% {
-      transform: translateY(-10px);
-      opacity: 1;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+        <div className='flex w-full justify-center my-20'>
+        <button
+            className="group relative px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500"
+          >
+            <a
+              href="https://drive.google.com/file/d/1tw2JLFT1_G-avFnttqoCZXxohqRWRByT/view?usp=drivesdk"
+              target="_blank"
+            >
+              <span className="relative z-10">Download Sponsorship Brochure</span>
+              <div className="absolute inset-0 rounded-full bg-white/20 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </a>
+          </button>
+        </div>
+      </div>
+      
 
-  .animate-float {
-    animation-name: float;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards; /* Retain the final state */
-    animation-iteration-count: 1; /* Play only once */
-  }
-
-  .hover\:scale-110:hover {
-    transform: scale(1.1); /* Enlarge the logo slightly */
-  }
-
-  .transition-transform {
-    transition: transform 0.3s ease; /* Smooth transition */
-  }
-`}</style>
+     
     </>
   );
 };

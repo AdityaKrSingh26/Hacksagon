@@ -4,6 +4,7 @@ const Sponsors = () => {
   return ( 
     <div>
       <SponsorsSection />
+      
     </div>
   );
 }

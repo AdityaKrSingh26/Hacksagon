@@ -5,7 +5,7 @@ export const schedulePhases = [
     phase: "Phase 1.1: Registration & Idea Submission",
     date: "20th Jan 2025 to 20th Feb 2025",
     icon: Clipboard,
-    description: "Begin your journey by registering and forming your team with peers",
+    description: "Begin your journey by registering and forming your team with peers. Submit your project idea in PDF/PPT format given by organising team.",
     events: [
       {
         title: "Registration Opens",
@@ -15,7 +15,7 @@ export const schedulePhases = [
       {
         title: "Registration Deadline",
         date: "Feb 20",
-        description: "Last day to submit your project idea in PDF format"
+        description: "Last day to submit your project idea in PDF/PPT format given by organising team"
       }
     ]
   },
@@ -28,7 +28,7 @@ export const schedulePhases = [
       {
         title: "Format Checking & Relevancy",
         date: "Feb 21 - Feb 28",
-        description: "Evaluation of sent pdf files"
+        description: "Evaluation of sent PPT/PDF files"
       },
       {
         title: "Announcement of Result",
@@ -56,7 +56,7 @@ export const schedulePhases = [
     ]
   },
   {
-    phase: "Phase 2.2: Presentation at IIITM",
+    phase: "Phase 2.2: Presentation at IIITM in online/offline mode",
     date: "1st Apr 2025 - 5th Apr 2025",
     icon: Video,
     description: "",
@@ -105,7 +105,7 @@ export const schedulePhases = [
     description: "",
     events: [
       {
-        title: "24hr Hackathon Sprint",
+        title: "36hr Hackathon Sprint",
         date: "May 15",
         description: "Teams will come and work on their projects getting it ready for final presentation"
       }
