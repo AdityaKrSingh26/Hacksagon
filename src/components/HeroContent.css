@@ -1,0 +1,25 @@
+@media (min-width: 1030px) and (max-width: 1280px) {
+    .custom-img {
+      transform: translateX(200px); 
+      margin-right: 0; 
+    }
+  }
+  @media (width :1024px){
+    .custom-img{
+      transform: translateX(170px);
+    }
+  }
+  @media (min-width: 1280px) {
+    .custom-img {
+      position: absolute;
+      right: -220px;
+      top: 0; 
+    }
+  }
+  @media (max-width: 675px) and (min-width: 440px) {
+    .custom-img {
+      width: 80%; 
+      max-width: 480px; 
+    }
+  }
+   

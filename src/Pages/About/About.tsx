@@ -1,5 +1,14 @@
 import "./about.css";
-import { Cpu, Users, Lightbulb, Trophy, Shield, Globe } from "lucide-react";
+import { 
+  Cpu, 
+  Users, 
+  Lightbulb, 
+  Trophy, 
+  Shield, 
+  Globe 
+} from "lucide-react";
+import { Link } from "react-router-dom"; // Import Link for routing
+
 const reasons = [
   {
     icon: Cpu,
@@ -28,7 +37,7 @@ const reasons = [
   {
     icon: Trophy,
     title: "Exciting Prizes",
-    description: "Win attractive cash prizes worth up to ₹1,00,000.",
+    description: "Win attractive cash prizes and goodies worth up to ₹2,50,000.",
   },
   {
     icon: Shield,
@@ -37,27 +46,26 @@ const reasons = [
       "Join like-minded research enthusiasts and collaborate to find optimized solutions.",
   },
 ];
+
 function About() {
   return (
     <div className="about-container flex flex-wrap px-4 md:px-6 py-10 md:py-16">
       <div className="about-text w-full md:w-1/2 pr-0 md:pr-6 mb-8 md:mb-0">
-      <div className="flex flex-col md:flex-row items-center justify-center leading-tight">
-  <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0">
-    Hacksagon
-    
-  </h1>
-  <div className="digit-container flex md:md-4 md:mb-0">
-    <div className="digit text-6xl font-bold">2</div>
-    <div className="digit text-6xl font-bold">0</div>
-    <div className="digit text-6xl font-bold">2</div>
-    <div className="digit text-6xl font-bold">5</div>
-  </div>
-</div>
-  <p className="mt-6 md:mt-8 text-gray-300 text-base md:text-lg px-4 md:px-0">
-    <br></br>
-    It is a national-level competition focused on both hardware and software innovations. It provides students a platform to address real-world challenges, fostering creativity and product development.
-  </p>
-</div>
+        <div className="flex flex-col md:flex-row items-center leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0">
+            Hacksagon
+          </h1>
+          <div className="digit-container flex md:md-4 md:mb-0">
+            <div className="digit text-6xl font-bold">2</div>
+            <div className="digit text-6xl font-bold">0</div>
+            <div className="digit text-6xl font-bold">2</div>
+            <div className="digit text-6xl font-bold">5</div>
+          </div>
+        </div>
+        <p className="mt-6 md:mt-8 text-gray-300 text-base md:text-lg px-4 md:px-0 mb-10">
+          It is a national-level competition focused on both hardware and software innovations. It provides students a platform to address real-world challenges, fostering creativity and product development.
+        </p>
+      </div>
       <div className="about-image w-full md:w-1/2 flex justify-center md:justify-end">
       </div>
       <section id="why-participate" className="py-16 bg-black/20 w-full">
@@ -83,7 +91,19 @@ function About() {
           </div>
         </div>
       </section>
+      <div className="text-center mt-8 text-white fa-align-center">
+        <p>
+          To know more about us , visit our
+          <Link 
+            to="/contact" 
+            className="text-purple-400 hover:text-pink-500 transition-colors ml-1"
+          >
+            Contact Us
+          </Link> page.
+        </p>
+      </div>
     </div>
   );
 }
+
 export default About;

@@ -3,7 +3,7 @@ import React from "react";
 const sponsors = [
   {
     title: "Event Sponsor",
-    amount: "≥₹100,000",
+    amount: "\u2265\u20b9100,000",
     benefits: [
       "At our social media",
       "Holdings at the entrance of the event",
@@ -13,7 +13,7 @@ const sponsors = [
   },
   {
     title: "Platinum Sponsor",
-    amount: "≥₹75,000",
+    amount: "\u2265\u20b975,000",
     benefits: [
       "Prominent branding on stage",
       "Recognition during opening ceremony",
@@ -23,7 +23,7 @@ const sponsors = [
   },
   {
     title: "Diamond Sponsor",
-    amount: "≥₹50,000",
+    amount: "\u2265\u20b950,000",
     benefits: [
       "Logo on event materials",
       "Shout-out in our newsletter",
@@ -33,20 +33,31 @@ const sponsors = [
   },
   {
     title: "Gold Sponsor",
-    amount: "≥₹25,000",
+    amount: "\u2265\u20b925,000",
     benefits: ["Branding on digital banners", "Website mention"],
     iconClass: "fas fa-trophy",
   },
   {
     title: "Silver Sponsor",
-    amount: "≥₹10,000",
+    amount: "\u2265\u20b910,000",
     benefits: ["Acknowledgment in the event program"],
     iconClass: "fas fa-medal",
   },
 ];
-
+const sponsorLogos = [
+  "https://i.postimg.cc/y8BTjTs0/kitek.jpg",
+  "https://i.postimg.cc/VLZyQ2TY/advance-tech.jpg",
+  "https://i.postimg.cc/MpPjB0T6/techno-scientific.jpg",
+  "https://i.postimg.cc/XY8XKjDV/enthutech.jpg",
+  "https://i.postimg.cc/8CH943hQ/chess.jpg",
+  "https://i.postimg.cc/nc1ngdK2/hellointern.jpg",
+  "https://i.postimg.cc/Dz21rYvX/bugsee.jpg",
+  "https://i.postimg.cc/QMf9D8p6/jupiter.jpg",
+  "https://i.postimg.cc/kg0qLDYN/voltfraction.jpg",
+  "https://i.postimg.cc/pLgcZv96/iiitian.jpg",
+  "https://i.postimg.cc/Kzczpdwn/codingblok.jpg"
+];
 export const SponsorsSection: React.FC = () => {
-
   return (
     <>
       {/* Sponsors Title and Line */}
@@ -88,7 +99,90 @@ export const SponsorsSection: React.FC = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section>   
+     {/* Our Previous Sponsors Section */}
+     <div className="w-full text-center py-8 bg-black/20">
+  <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
+    {[ "P", "a", "s", "t", "\u00A0", "S", "p", "o", "n", "s", "o", "r", "s"].map((letter, index) => (
+      <span key={index}>{letter}</span>
+    ))}
+  </h1>
+  <div className="container mx-auto px-4 md:px-6 max-w-screen-xl mt-8">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      {sponsorLogos.map((logo, index) => {
+        const rowNumber = Math.floor(index / 4);
+        const delay = rowNumber * 0.75;
+        return (
+          <div
+            key={index}
+            className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md animate-float hover:scale-110 transition-transform duration-300"
+            style={{
+              animationDelay: `${delay}s`,
+              animationDuration: "2s",
+            }}
+          >
+            <img
+              src={logo}
+              alt={`Sponsor ${index + 1}`}
+              className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
+            />
+          </div>
+        );
+      })}
+    </div>
+  </div>
+  
+</div>
+
+
+<div className="max-w-3xl mx-auto">
+<div className="mt-12 p-6 bg-purple-500/10 rounded-lg border border-purple-500/20">
+          <h3 className="text-xl font-semibold mb-4">Note :</h3>
+          <p className="text-gray-300">
+          All skill levels are welcome here! This platform offers participants a chance to gain national recognition and connect with tech enthusiasts. As a sponsor, support emerging talents while showcasing your brand to a wide, engaged audience and making a lasting impact in the tech community   </p>
+        </div>
+
+<div className="text-center mb-8 mt-8"> 
+  <a
+    href="https://jmp.sh/s/o6VvHQDkD5p3XuOTa9kl"
+    download
+    className="bg-purple-700 text-white px-8 py-3 rounded-lg hover:bg-purple-500 transition-colors"
+  >
+    Download Sponsorship Details (PDF)
+  </a>
+</div>
+</div>
+<style>{`
+  @keyframes float {
+    0% {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .animate-float {
+    animation-name: float;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; /* Retain the final state */
+    animation-iteration-count: 1; /* Play only once */
+  }
+
+  .hover\:scale-110:hover {
+    transform: scale(1.1); /* Enlarge the logo slightly */
+  }
+
+  .transition-transform {
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+`}</style>
     </>
   );
 };

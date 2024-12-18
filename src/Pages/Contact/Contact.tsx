@@ -1,5 +1,12 @@
 import "./contact.css";
-import { Instagram, Linkedin, Globe, Facebook } from 'lucide-react';
+import {
+  Instagram,
+  Linkedin,
+  Globe,
+  Facebook
+} from 'lucide-react';
+
+
 const contacts = [
   {
     name: "Disha Kwatra",
@@ -23,12 +30,16 @@ const contacts = [
     pos: "Web Master"
   },
 ];
+
+
 const social = [
   { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/abv_iiitm_ieee' },
   { name: 'LinkedIn', icon: Linkedin, url: 'https://www.linkedin.com/company/abviiitmieee' },
-  { name: 'Email', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
+  { name: 'IEEE website', icon: Globe, url: 'https://ieee.iiitm.ac.in/' },
   { name: 'Facebook', icon: Facebook, url: 'https://www.facebook.com/abviiitmieee' }
 ];
+
+
 const Contact = () => {
   return (
     <div className="w-2/3 mx-auto flex flex-col">
@@ -73,10 +84,12 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex md:flex-col mx-auto my-10 md:w-full">
-      <h1
-  className="text-4xl md:text-5xl md:pb-2 my-auto pr-4 md:p-0 md:border-b text-center font-bold animate-fade-in-bounce"
->Our Social accounts!</h1>
-  <div className="w-full border-l md:border-none md:flex md:justify-evenly">
+        <h1
+          className="text-4xl md:text-5xl my-auto pr-4 pb-8 md:border-b text-center font-bold"
+        >
+          Our Social accounts!
+        </h1>
+        <div className="w-full border-l md:border-none md:flex md:justify-evenly mt-3">
           {social.map((app) => (
             <a className="flex p-2" href={app.url} key={app.name}>
               <app.icon />
