@@ -12,7 +12,7 @@ import { Link } from "react-router-dom"; // Import Link for routing
 const reasons = [
   {
     icon: Cpu,
-    title: "Innovative Hackfest",
+    title: "Multi-dimensional Hackfest",
     description:
       "Combine the configurability of hardware with the reusability of software to create groundbreaking solutions.",
   },
@@ -20,19 +20,19 @@ const reasons = [
     icon: Users,
     title: "Broad Participation",
     description:
-      "Open to students from IITs, NITs, IIITs, and other MHRD/AICTE/UGC-approved institutions.",
+      "Open to all aspiring college students across the country.",
   },
   {
     icon: Lightbulb,
     title: "Innovative Solutions",
     description:
-      "Provide cost-effective and innovative solutions to various research challenges.",
+      "Craft innovative and cost-effective solutions to real-world problem statements presented during the hackathon.",
   },
   {
     icon: Globe,
     title: "National Recognition",
     description:
-      "Gain recognition for your research and your institution across premier institutes in India.",
+      "Showcase your expertise and bring prestige to your institution by standing out among India’s premier institutes.",
   },
   {
     icon: Trophy,
@@ -43,7 +43,7 @@ const reasons = [
     icon: Shield,
     title: "Collaborative Symposium",
     description:
-      "Join like-minded research enthusiasts and collaborate to find optimized solutions.",
+      "Collaborate with passionate innovators and work together to develop cutting-edge solutions.",
   },
 ];
 
@@ -52,9 +52,9 @@ function About() {
     <div className="about-container flex flex-wrap px-4 md:px-6 py-10 md:py-16">
       <div className="about-text w-full md:w-1/2 pr-0 md:pr-6 mb-8 md:mb-0">
         <div className="flex flex-col md:flex-row items-center leading-tight">
-          <h1 className="text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0">
+        <h1 className="text-6xl my-6 md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0 pb-4">
             Hacksagon
-          </h1>
+        </h1>
           <div className="digit-container flex md:md-4 md:mb-0">
             <div className="digit text-6xl font-bold">2</div>
             <div className="digit text-6xl font-bold">0</div>
