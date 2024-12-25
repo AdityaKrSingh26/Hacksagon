@@ -82,7 +82,7 @@ export function HeroContent() {
               href="/"
               // target="_blank"
             >
-              <span className="relative z-10">Registerations Opening soon</span>
+              <span className="relative z-10">Registrations Opening soon</span>
               <div className="absolute inset-0 rounded-full bg-white/20 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </a>
           </button>

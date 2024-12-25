@@ -4,7 +4,6 @@ const criteria = [
   'Currently enrolled students in any university or college',
   'Recent graduates (within the last 12 months)',
   'High school students aged 16 and above',
-  'Professionals with less than 3 years of experience'
 ];
 
 export function EligibilitySection() {

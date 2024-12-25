@@ -100,7 +100,7 @@ export const schedulePhases = [
   },
   {
     phase: "Phase 3.2: Prototype Round at IIITM",
-    date: "15th May 2025",
+    date: "15th May 2025 (Tentative)",
     icon: Code,
     description: "",
     events: [
@@ -113,7 +113,7 @@ export const schedulePhases = [
   },
   {
     phase: "Phase 3.3: Final Result",
-    date: "16th May 2025",
+    date: "16th May 2025 (Tentative)",
     icon: Award,
     description: "Release of final Results and Distribution of Prizes",
     events: []

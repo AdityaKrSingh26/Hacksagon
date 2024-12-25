@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const questions = [
-  "Melody chocolatey kyu hai?",
-  "Intern kab lagegi?",
-  "CG 8 se upar jaayegi kya?",
-  "Why life jhand?",
+  "What will be the steps to register for hacksagon ?",
+  "How many individuals are allowed in a team ?",
+  "How points will be awarded for qualification to next round ?",
+  "What are amenities provided at your accomodation for final round ?",
 ];
 
 export const ContactSection = () => {
@@ -25,10 +25,9 @@ export const ContactSection = () => {
       <div className="space-y-6 w-full max-w-lg">
 
         <header>
-          <p className="text-sm font-light uppercase mb-2">/support</p>
+          <p className="text-sm font-light uppercase mb-2">Support</p>
           <div className="border-t border-white"></div>
         </header>
-
         <div>
           <p className="text-xl leading-relaxed">
             <strong>Have questions?</strong> Contact Support!
