@@ -1,73 +1,127 @@
+import  { useEffect, useRef, useState } from "react";
 import "./about.css";
-import { 
-  Cpu, 
-  Users, 
-  Lightbulb, 
-  Trophy, 
-  Shield, 
-  Globe 
-} from "lucide-react";
-import { Link } from "react-router-dom"; // Import Link for routing
+import { Camera, Users, Lightbulb, Award, Shield, Globe } from 'lucide-react';
 
 const reasons = [
   {
-    icon: Cpu,
+    icon: Camera,
     title: "Multi-dimensional Hackfest",
-    description:
-      "Combine the configurability of hardware with the reusability of software to create groundbreaking solutions.",
+    description: "Combine the configurability of hardware with the reusability of software to create groundbreaking solutions.",
   },
   {
     icon: Users,
     title: "Broad Participation",
-    description:
-      "Open to all aspiring college students across the country.",
+    description: "Open to all aspiring college students across the country.",
   },
   {
     icon: Lightbulb,
     title: "Innovative Solutions",
-    description:
-      "Craft innovative and cost-effective solutions to real-world problem statements presented during the hackathon.",
+    description: "Craft innovative and cost-effective solutions to real-world problem statements presented during the hackathon.",
   },
   {
     icon: Globe,
     title: "National Recognition",
-    description:
-      "Showcase your expertise and bring prestige to your institution by standing out among India’s premier institutes.",
+    description: "Showcase your expertise and bring prestige to your institution by standing out among India's premier institutes.",
   },
   {
-    icon: Trophy,
+    icon: Award,
     title: "Exciting Prizes",
     description: "Win attractive cash prizes and goodies worth up to ₹2,50,000.",
   },
   {
     icon: Shield,
     title: "Collaborative Symposium",
-    description:
-      "Collaborate with passionate innovators and work together to develop cutting-edge solutions.",
+    description: "Collaborate with passionate innovators and work together to develop cutting-edge solutions.",
   },
 ];
 
 function About() {
+  const textSectionRef = useRef(null);
+  const [isTextVisible, setIsTextVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsTextVisible(true);
+        }
+      },
+      {
+        root: null,
+        threshold: 0.1,
+      }
+    );
+
+    if (textSectionRef.current) {
+      observer.observe(textSectionRef.current);
+    }
+
+    return () => {
+      if (textSectionRef.current) {
+        observer.unobserve(textSectionRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="about-container flex flex-wrap px-4 md:px-6 py-10 md:py-16">
-      <div className="about-text w-full md:w-1/2 pr-0 md:pr-6 mb-8 md:mb-0">
-        <div className="flex flex-col md:flex-row items-center leading-tight">
+      <div className="flex flex-col md:flex-row items-center leading-tight">
         <h1 className="text-6xl my-6 md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0 pb-4">
-            Hacksagon
+          Hacksagon
         </h1>
-          <div className="digit-container flex md:md-4 md:mb-0">
-            <div className="digit text-6xl font-bold">2</div>
-            <div className="digit text-6xl font-bold">0</div>
-            <div className="digit text-6xl font-bold">2</div>
-            <div className="digit text-6xl font-bold">5</div>
-          </div>
+        <div className="digit-container flex md:md-4 md:mb-0">
+          <div className="digit text-6xl font-bold">2</div>
+          <div className="digit text-6xl font-bold">0</div>
+          <div className="digit text-6xl font-bold">2</div>
+          <div className="digit text-6xl font-bold">5</div>
         </div>
-        <p className="mt-6 md:mt-8 text-gray-300 text-base md:text-lg px-4 md:px-0 mb-10">
-          It is a national-level competition focused on both hardware and software innovations. It provides students a platform to address real-world challenges, fostering creativity and product development.
+      </div>
+
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 py-10 text-gray-200">
+        <div className="bg-black/20 p-6 rounded-lg flex flex-col items-center text-center">
+          <div className="image-container mb-4 w-25 h-20 flex items-center justify-center rounded-lg">
+            <img src="https://i.postimg.cc/d3CDWpY9/ieee-mp-section-cover-removebg-preview.png" alt="College Logo" className="h-full object-contain" />
+          </div>
+          <h2 className="text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0 pb-4">IEEE MP SECTION</h2>
+          <p className="text-base leading-relaxed">
+            IEEE MP Section continues this mission by empowering professionals, students, and researchers in Madhya Pradesh to collaborate, innovate, and excel in their respective fields. Together, we strive to build a better technological future for the region and beyond.
+          </p>
+        </div>
+        <div className="bg-black/20 p-6 rounded-lg flex flex-col items-center text-center">
+          <div className="image-container mb-4 w-25 h-20 flex items-center justify-center rounded-lg">
+            <img src="https://i.postimg.cc/9fkMCJ8q/ieee-white.png" alt="IEEE Logo" className="h-full object-contain " />
+          </div>
+          <h2 className="text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-400 mb-4 md:mb-0 pb-4">IEEE STUDENT BRANCH</h2>
+          <p className="text-base leading-relaxed">
+            The ABV-IIITM IEEE Student Branch, established in 2019, is a dynamic platform that connects academia and industry. Through workshops, seminars, and competitions, it provides students with hands-on experience, enhancing their technical skills and preparing them for challenges.
+          </p>
+        </div>
+      </section>
+
+      <div className="about-text w-full mb-8" ref={textSectionRef}>
+        <p
+          className={`mt-6 md:mt-8 text-gray-300 text-base md:text-lg px-4 md:px-0 mb-10 animate-fade-up ${
+            isTextVisible ? "animate-fade-up-visible" : ""
+          }`}
+        >
+          HACKSAGON was first launched in 2020 as a collaborative initiative to bring together innovative minds from across the nation. The inaugural edition was successfully organized by ABV-IIITM IEEE Student Branch in partnership with six IIITs, namely IIIT Una, IIIT Ranchi, IIIT Lucknow, IIIT Nagpur, IIITDM Kurnool, and IIIT Bhagalpur which witnessed registration from 293 teams with 1200 students and 95 teams being qualified for the final round.
+        </p>
+        <p
+          className={`mt-6 md:mt-8 text-gray-300 text-base md:text-lg px-4 md:px-0 mb-10 animate-fade-up ${
+            isTextVisible ? "animate-fade-up-visible" : ""
+          }`}
+        >
+          Building upon the robust foundation of its inaugural edition, HACKSAGON 2025 aims to elevate innovation and collaboration to new heights. This year, the hackathon begins in January 2025 and spans three stages, concluding in mid-May 2025. Participants will have the opportunity to ideate, prototype, and deliver impactful solutions addressing real-world challenges for a prize pool of over Rs 2,50,000 and much more.
+        </p>
+        <p
+          className={`mt-6 md:mt-8 text-gray-300 text-base md:text-lg px-4 md:px-0 mb-10 animate-fade-up ${
+            isTextVisible ? "animate-fade-up-visible" : ""
+          }`}
+        >
+          The event features five sub-tracks, each within the Software Track and the Hardware + Software Track, to encourage interdisciplinary learning and innovation.
         </p>
       </div>
-      <div className="about-image w-full md:w-1/2 flex justify-center md:justify-end">
-      </div>
+
       <section id="why-participate" className="py-16 bg-black/20 w-full">
         <div className="container mx-auto px-4 md:px-6 max-w-screen-xl">
           <h4 className="text-4xl md:text-5xl font-bold mb-8 text-center text-white">
@@ -91,15 +145,32 @@ function About() {
           </div>
         </div>
       </section>
+
       <div className="text-center mt-8 text-white">
         <p>
-          To know more about us , visit our
-          <Link 
-            to="/contact" 
+          To know more prizes and rewards, visit our
+          <button
+            onClick={() => (window.location.href = "/awards")}
+            className="text-purple-400 hover:text-pink-500 transition-colors ml-1"
+          >
+            Awards
+          </button>
+          &nbsp;
+          page.
+        </p>
+      </div>
+      &nbsp;
+      <div className="text-center mt-8 text-white">
+        <p>
+          To know more about us, visit our
+          <button
+            onClick={() => (window.location.href = "/contact")}
             className="text-purple-400 hover:text-pink-500 transition-colors ml-1"
           >
             Contact Us
-          </Link> page.
+          </button>
+          &nbsp;
+          page.
         </p>
       </div>
     </div>
