@@ -57,21 +57,21 @@
   display: inline-block;
   font-size: inherit;
   opacity: 0;
-  transform: translateY(25px); 
-  animation: digitFadeIn 0.8s ease-out forwards;
+  transform: translateY(15px); 
+  animation: digitFadeIn 0.2s ease-out forwards;
 }
 
 .digit:nth-child(1) {
-  animation-delay: 0.4s;
+  animation-delay: 0.3s;
 }
 .digit:nth-child(2) {
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }
 .digit:nth-child(3) {
-  animation-delay: 1.2s;
+  animation-delay: 0.9s;
 }
 .digit:nth-child(4) {
-  animation-delay: 1.6s;
+  animation-delay: 1.2s;
 }
 
 @keyframes digitFadeIn {
@@ -101,14 +101,14 @@
 }
 
 .animate-fade-up:nth-of-type(1) {
-  animation-delay: 0s;
+  animation-delay: 1.3s;
 }
 
 .animate-fade-up:nth-of-type(2) {
-  animation-delay: 1s;
+  animation-delay: 1.9s;
 }
 
 .animate-fade-up:nth-of-type(3) {
-  animation-delay: 2s;
+  animation-delay: 2.5s;
 }
 

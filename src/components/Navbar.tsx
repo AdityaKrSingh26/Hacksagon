@@ -20,8 +20,8 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="flex flex-col w-full  md:container mx-auto px-6 py-6 z-10 text-white">
-      <div className="flex items-center justify-between w-full"> {/* Edit so that on smaller screens this takes full width and mobile version of register button is below on newline */}
+    <nav className="container mx-auto px-6 py-6 z-10 text-white">
+      <div className="flex items-center justify-between">
         <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-1">
             <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="" />
@@ -29,18 +29,19 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* For large screens */}
-        <div className="hidden md:flex navbar-links">
+       
+        <div className="hidden sm:flex navbar-links">
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
-          <Link to="/awards" className="hover:text-purple-300 transition-colors">Awards</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
           <Link to="/brochure" className="hover:text-purple-300 transition-colors">Brochure</Link>
+          <Link to="/awards" className='hover:text-purple-300 transition-colors'>Awards</Link>
+          <Link to="/technical_partner" className='hover:text-purple-300 transition-colors'>Partner</Link>
         </div>
-        {/* Register Now Button (Hidden on smaller screens) */}
-        <div className="hidden md:block">
+       
+        <div className="hidden sm:block">
           <Link
             to="https://unstop.com/"
             target="_blank"
@@ -50,8 +51,8 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* Hamburger Menu (Mobile View) */}
-        <div className="md:hidden">
+        
+        <div className="sm:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
@@ -69,8 +70,8 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Register Now Button */}
-      <div className="mt-4 md:hidden w-full block">
+      
+      <div className="mt-4 sm:hidden w-full">
         <Link
           to="https://unstop.com/"
           target="_blank"
@@ -84,15 +85,16 @@ export function Navbar() {
       {isOpen && (
         <div
           ref={dropdownRef}
-          className="md:hidden flex flex-col items-start space-y-4 mt-4 transition-all duration-500 ease-in-out bg-black bg-opacity-80 p-6 rounded-lg opacity-100 scale-100"
+          className="sm:hidden flex flex-col items-start space-y-4 mt-4 transition-all duration-500 ease-in-out bg-black bg-opacity-80 p-6 rounded-lg opacity-100 scale-100"
         >
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
-          <Link to="/awards" className='hover:text-purple-300 transition-colors'>Awards</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
           <Link to="/brochure" className='hover:text-purple-300 transition-colors'>Brochure</Link>
+          <Link to="/awards" className='hover:text-purple-300 transition-colors'>Awards</Link>
+          <Link to="/technical_partner" className='hover:text-purple-300 transition-colors'>Partner</Link>
         </div>
       )}
     </nav>
