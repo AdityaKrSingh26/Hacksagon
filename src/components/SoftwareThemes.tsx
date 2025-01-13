@@ -51,29 +51,29 @@ const SoftwareThemes = () => {
               </div>
               <p className="text-gray-400">{track.description}</p>
               <div
-  className="transition-all duration-500 ease-in-out overflow-hidden"
-  style={{ maxHeight: expanded[index] ? "2000px" : "0" }}
->
-  <p className="text-gray-400 mt-2 leading-tight">
-    <strong>Objective:</strong> {track.objective}
-  </p>
-  <p className="text-gray-400 mt-2 leading-tight">
-    <strong>Technology Stack:</strong>
-  </p>
-  <ul className="text-gray-400 list-disc pl-6 mt-1">
-    {track.techStack.map((tech, idx) => (
-      <li key={`tech-${idx}`}>{tech}</li>
-    ))}
-  </ul>
-  <p className="text-gray-400 mt-2 leading-tight">
-    <strong>Challenge Ideas:</strong>
-  </p>
-  <ul className="text-gray-400 list-disc pl-6 mt-1">
-    {track.challengeIdeas.map((idea, idx) => (
-      <li key={`challenge-${idx}`}>{idea}</li>
-    ))}
-  </ul>
-</div>
+                className="transition-all duration-500 ease-in-out overflow-hidden"
+                style={{ maxHeight: expanded[index] ? "2000px" : "0" }}
+              >
+                <p className="text-gray-400 mt-2 leading-tight">
+                  <strong>Objective:</strong> {track.objective}
+                </p>
+                <p className="text-gray-400 mt-2 leading-tight">
+                  <strong>Technology Stack:</strong>
+                </p>
+                <ul className="text-gray-400 list-disc pl-6 mt-1">
+                  {track.techStack.map((tech, idx) => (
+                    <li key={`tech-${idx}`}>{tech}</li>
+                  ))}
+                </ul>
+                <p className="text-gray-400 mt-2 leading-tight">
+                  <strong>Challenge Ideas:</strong>
+                </p>
+                <ul className="text-gray-400 list-disc pl-6 mt-1">
+                  {track.challengeIdeas.map((idea, idx) => (
+                    <li key={`challenge-${idx}`}>{idea}</li>
+                  ))}
+                </ul>
+              </div>
 
               <button
                 className="text-blue-500 mt-2 underline"
