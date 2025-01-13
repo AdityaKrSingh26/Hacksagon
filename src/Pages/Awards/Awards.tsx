@@ -1,5 +1,6 @@
 import ConfettiComponent from "../../components/Confetti";
 import { motion } from "motion/react"
+import "./Awards.css"
 
 const Awards = () => {
   const awards = ["A", "w", "a", "r", "d", "s"]
@@ -27,12 +28,12 @@ const Awards = () => {
         className="bg-white h-[2px]"
       />
 
-      <div className="pool text-5xl text-center">
+      <div className="pool text-7xl text-center">
         <motion.div
           initial={{}}
           animate={{}}
           transition={{}}
-          className="text-transparent animate-text-border-and-fill bg-clip-text bg-gradient-to-b from-green-500 to-blue-700 animate-fill-from-bottom text-4xl font-bold bg-no-repeat"
+          className="text-transparent text-stroke-white animate-text-fill bg-clip-text bg-gradient-to-b from-white to-white text-7xl font-bold bg-no-repeat"
         >
           Prize Pool
         </motion.div>

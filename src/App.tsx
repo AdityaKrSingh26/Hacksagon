@@ -10,8 +10,8 @@ import Themes from "./Pages/Themes/Themes";
 import Schedule from "./Pages/Schedule/Schedule"
 import { PdfViewer } from "./components/PdfViewer";
 import { Technical } from "./Pages/TechnicalPartner/Technical_partner";
-
 import Awards from "./Pages/Awards/Awards";
+
 function App() {
   return (
     <div className="bg-gradient-to-br from-indigo-950 via-purple-900 to-violet-950 relative text-white min-w-96">
@@ -28,6 +28,8 @@ function App() {
               <Route path="/themes" element={<Themes />} />
               <Route path="/schedule" element={<Schedule/>} />
               <Route path="/brochure" element ={<PdfViewer/>}/>
+              <Route path="/technical_partner" element={<Technical/>}/>
+              <Route path="/awards" element={<Awards/>}/>
             </Routes>
           </div>
           <Footer />
