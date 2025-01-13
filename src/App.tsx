@@ -9,6 +9,8 @@ import { Footer } from "./components/Footer";
 import Themes from "./Pages/Themes/Themes";
 import Schedule from "./Pages/Schedule/Schedule"
 import { PdfViewer } from "./components/PdfViewer";
+import { Technical } from "./Pages/TechnicalPartner/Technical_partner";
+
 import Awards from "./Pages/Awards/Awards";
 function App() {
   return (
@@ -26,7 +28,6 @@ function App() {
               <Route path="/themes" element={<Themes />} />
               <Route path="/schedule" element={<Schedule/>} />
               <Route path="/brochure" element ={<PdfViewer/>}/>
-              <Route path="/awards" element ={<Awards/>}/>
             </Routes>
           </div>
           <Footer />
