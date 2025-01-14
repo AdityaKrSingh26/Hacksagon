@@ -29,7 +29,7 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* For large screens */}
+       
         <div className="hidden sm:flex navbar-links">
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
@@ -37,11 +37,13 @@ export function Navbar() {
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
           <Link to="/brochure" className="hover:text-purple-300 transition-colors">Brochure</Link>
+          <Link to="/awards" className='hover:text-purple-300 transition-colors'>Awards</Link>
+          <Link to="/technical_partner" className='hover:text-purple-300 transition-colors'>Partner</Link>
         </div>
-        {/* Register Now Button (Hidden on smaller screens) */}
+       
         <div className="hidden sm:block">
           <Link
-            to="https://unstop.com/"
+            to="https://devfolio.co/discover"
             target="_blank"
             className=" register-btn bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center"
           >
@@ -49,7 +51,7 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* Hamburger Menu (Mobile View) */}
+        
         <div className="sm:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -68,10 +70,10 @@ export function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Register Now Button */}
+      
       <div className="mt-4 sm:hidden w-full">
         <Link
-          to="https://unstop.com/"
+          to="https://devfolio.co/discover"
           target="_blank"
           className="block bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center w-full"
         >
@@ -91,6 +93,8 @@ export function Navbar() {
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
           <Link to="/brochure" className='hover:text-purple-300 transition-colors'>Brochure</Link>
+          <Link to="/awards" className='hover:text-purple-300 transition-colors'>Awards</Link>
+          <Link to="/technical_partner" className='hover:text-purple-300 transition-colors'>Partner</Link>
         </div>
       )}
     </nav>
