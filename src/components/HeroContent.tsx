@@ -3,55 +3,25 @@ import { Stats } from './Stats';
 import { useNavigate } from 'react-router-dom';
 import { CircuitBoard, Cpu, Zap } from 'lucide-react';
 
-const useDevfolioSDK = () => {
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  useEffect(() => {
-    // Remove any existing SDK script to prevent duplicates
-    const existingScript = document.querySelector('script[src*="devfolio"]');
-    if (existingScript) {
-      existingScript.remove();
-    }
-
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
-    script.async = true;
-    script.defer = true;
-
-    script.onload = () => {
-      setIsLoaded(true);
-    };
-
-    document.body.appendChild(script);
-
-    return () => {
-      if (script.parentNode) {
-        script.parentNode.removeChild(script);
-      }
-    };
-  }, []);
-
-  return isLoaded;
-};
 
 export function HeroContent() {
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
-  const isDevfolioLoaded = useDevfolioSDK();
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
   useEffect(() => {
-    // Reinitialize buttons only when SDK and DOM are ready
-    if (isDevfolioLoaded) {
-      const applyButton = document.querySelector('.apply-button');
-      if (applyButton && window.devfolio) {
-        window.devfolio.init();
-      }
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
     }
-  }, [isDevfolioLoaded]);
+  }, []);
 
   return (
     <div className="flex-1 container mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 flex flex-col lg:flex-row items-center relative">
@@ -75,14 +45,12 @@ export function HeroContent() {
         className={`max-w-5xl transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
       >
-        {isDevfolioLoaded && (
-          <div
-            className="apply-button"
-            data-hackathon-slug="hacksagon-2025"
-            data-button-theme="light"
-            style={{ height: '44px', width: '312px' }}
-          />
-        )}
+        <div
+          className="apply-button"
+          data-hackathon-slug="hacksagon-2025"
+          data-button-theme="light"
+          style={{ height: '44px', width: '312px' }}
+        />
 
         <div className="w-full md:w-11/12 flex flex-col md:flex-row items-start md:items-center justify-between">
           <div className="w-full md:w-1/2">
@@ -123,14 +91,12 @@ export function HeroContent() {
           >
             Learn More
           </button>
-          {isDevfolioLoaded && (
-            <div
-              className="apply-button"
-              data-hackathon-slug="hacksagon-2025"
-              data-button-theme="light"
-              style={{ height: '44px', width: '312px' }}
-            />
-          )}
+          <div
+            className="apply-button"
+            data-hackathon-slug="hacksagon-2025"
+            data-button-theme="light"
+            style={{ height: '44px', width: '312px' }}
+          />
 
         </div>
 
