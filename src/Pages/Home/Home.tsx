@@ -37,7 +37,7 @@ function HomePage() {
                         >
                             <img
                                 src={DevfolioLogo}
-                                alt="devfolio"
+                                alt="DEVFOLIO LOGO"
                                 className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
                             />
                         </div>
@@ -46,7 +46,7 @@ function HomePage() {
                         >
                             <img
                                 src={EthIndia}
-                                alt="EthIndia"
+                                alt="ETHINDIA LOGO"
                                 className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
                             />
                         </div>
@@ -55,7 +55,7 @@ function HomePage() {
                         >
                             <img
                                 src={Polygon}
-                                alt="Polygon"
+                                alt="POLYGON LOGO"
                                 className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
                             />
                         </div>
