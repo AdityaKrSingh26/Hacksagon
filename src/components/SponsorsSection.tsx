@@ -143,9 +143,6 @@ export const SponsorsSection: React.FC = () => {
           </button>
         </div>
       </div>
-      
-
-     
     </>
   );
 };
