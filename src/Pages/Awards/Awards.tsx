@@ -94,7 +94,7 @@ const Awards = () => {
           </svg>
         </motion.div>
 
-        <div className="flex mx-auto justify-center text-white text-5xl md:text-8xl flex-wrap font-bold">
+        <div className="flex mx-auto justify-center text-white text-5xl md:text-7xl flex-wrap font-bold">
           {prize.map((char, index) => (
             <motion.div
               key={index}
@@ -115,12 +115,6 @@ const Awards = () => {
             +
           </motion.div>
         </div>
-
-          <div className="flex w-full justify-center items-end">
-            <div className="border rounded-md p-4 ">jcebwiu</div>
-            <div className="border rounded-md p-4 h-40">wefwe</div>
-            <div className="border rounded-md p-4 ">wefwe</div>
-          </div>
       </div>
 
       <ConfettiComponent />
