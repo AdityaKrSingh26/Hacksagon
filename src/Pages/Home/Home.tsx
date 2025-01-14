@@ -5,9 +5,9 @@ import { Prizes } from '../../components/Prizes';
 import { EligibilitySection } from '../../components/EligibilitySection';
 import { useEffect } from 'react';
 
-import DevfolioLogo from "../../images/Devfolio.png";
-import EthIndia from "../../images/ETHIndia.png";
-import Polygon from "../../images/polygon.png"
+import DevfolioLogo from "../../images/Devfolio_Logo-Colored.png";
+import EthIndia from "../../images/ethindia-dark.png";
+import Polygon from "../../images/Polygon_Logo-Dark@2x.png"
 
 function HomePage() {
     useEffect(() => {
