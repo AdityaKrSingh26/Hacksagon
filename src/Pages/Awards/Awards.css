@@ -1,15 +1,9 @@
 .text-stroke-white {
   -webkit-text-stroke: 2px white;
-  color: transparent; /* This ensures only the stroke is visible */
+  color: transparent;
 }
 
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-html {
+body, html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
