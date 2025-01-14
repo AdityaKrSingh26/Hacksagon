@@ -43,7 +43,7 @@ export function Navbar() {
        
         <div className="hidden sm:block">
           <Link
-            to="https://unstop.com/"
+            to="https://devfolio.co/discover"
             target="_blank"
             className=" register-btn bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center"
           >
@@ -73,7 +73,7 @@ export function Navbar() {
       
       <div className="mt-4 sm:hidden w-full">
         <Link
-          to="https://unstop.com/"
+          to="https://devfolio.co/discover"
           target="_blank"
           className="block bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center w-full"
         >
