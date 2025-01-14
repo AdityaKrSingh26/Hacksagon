@@ -6,7 +6,6 @@ import "./Awards.css";
 
 const Awards = () => {
   const prize = "₹2,50,000".split("");
-  const awards = "Prizes & Rewards".split("");
   const textRef = useRef<SVGTextElement | null>(null);
 
   useEffect(() => {
@@ -30,18 +29,8 @@ const Awards = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full px-4 mx-auto">
-      <div className="awards-text flex justify-center">
-        {awards.map((letter, index) => (
-          <motion.div
-            key={index}
-            initial={{ y: -1500 / (index + 1) }}
-            animate={{ y: 0 }}
-            transition={{ type: "spring" }}
-            className="font-bold text-7xl bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"
-          >
-            {letter === " " ? "\u00A0" : letter}
-          </motion.div>
-        ))}
+      <div className="text-transparent text-7xl font-bold bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500">
+        Prized & Rewards
       </div>
 
       <div className="pool text-7xl text-center bg-opacity-25 rounded-md w-full m-4 p-4 h-96 flex flex-col justify-evenly bg-white relative">
@@ -114,6 +103,12 @@ const Awards = () => {
             +
           </motion.div>
         </div>
+
+          <div className="flex w-full justify-center items-end">
+            <div className="border rounded-md p-4 ">jcebwiu</div>
+            <div className="border rounded-md p-4 h-40">wefwe</div>
+            <div className="border rounded-md p-4 ">wefwe</div>
+          </div>
       </div>
 
       <ConfettiComponent />
