@@ -6,8 +6,18 @@ export default {
       animation: {
         'fade-in-bounce': 'fadeIn 1s ease-out, bounce 0.5s ease-out',
         'text-fill': 'fillFromBottom 2s ease-in-out forwards',
+        slideInLeft: 'slideInLeft 1s ease-out forwards',
+        slideInRight: 'slideInRight 1s ease-out forwards',
       },
       keyframes: {
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },

@@ -41,7 +41,7 @@ const sponsors = [
   {
     title: "Silver Sponsor",
     amount: "\u2265\u20b910,000",
-    benefits: [ 
+    benefits: [
       "Acknowledgment in the event program",
       "Logo included at prominent locations"
     ],
@@ -60,6 +60,11 @@ const sponsorLogos = [
   "https://i.postimg.cc/kg0qLDYN/voltfraction.jpg",
   "https://i.postimg.cc/Kzczpdwn/codingblok.jpg"
 ];
+
+import DevfolioLogo from "../images/Devfolio.png";
+import EthIndia from "../images/ETHIndia.png";
+import Polygon from "../images/polygon.png"
+
 export const SponsorsSection: React.FC = () => {
   return (
     <>
@@ -103,6 +108,48 @@ export const SponsorsSection: React.FC = () => {
           </div>
         </div>
       </section>
+      {/* Our Current Sponsors Section */}
+      <div className="w-full text-center py-8 bg-black/20">
+        <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
+          {["C", "u", "r", "r", "e", "n", "t", "\u00A0", "S", "p", "o", "n", "s", "o", "r", "s"].map((letter, index) => (
+            <span key={index}>{letter}</span>
+          ))}
+        </h1>
+        <div className="container mx-auto px-4 md:px-6 max-w-screen-xl mt-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <div
+              className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src={DevfolioLogo}
+                alt="devfolio"
+                className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
+              />
+            </div>
+            <div
+              className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src={EthIndia}
+                alt="EthIndia"
+                className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
+              />
+            </div>
+            <div
+              className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src={Polygon}
+                alt="Polygon"
+                className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
+              />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
       {/* Our Previous Sponsors Section */}
       <div className="w-full text-center py-8 bg-black/20">
         <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
@@ -116,7 +163,7 @@ export const SponsorsSection: React.FC = () => {
               return (
                 <div
                   key={index}
-                  className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:scale-110 transition-transform duration-300"   
+                  className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:scale-110 transition-transform duration-300"
                 >
                   <img
                     src={logo}
@@ -130,7 +177,7 @@ export const SponsorsSection: React.FC = () => {
         </div>
 
         <div className='flex w-full justify-center my-20'>
-        <button
+          <button
             className="group relative px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500"
           >
             <a
@@ -143,6 +190,9 @@ export const SponsorsSection: React.FC = () => {
           </button>
         </div>
       </div>
+
+
+
     </>
   );
 };

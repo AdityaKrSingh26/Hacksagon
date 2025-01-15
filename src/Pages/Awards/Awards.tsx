@@ -6,8 +6,8 @@ import "./Awards.css";
 
 const Awards = () => {
   const prize = "₹2,50,000".split("");
-  const textRef = useRef<SVGTextElement | null>(null);
   const awards = "Prizes & Rewards".split("");
+  const textRef = useRef<SVGTextElement | null>(null);
 
   useEffect(() => {
     if (textRef.current) {
@@ -94,7 +94,7 @@ const Awards = () => {
           </svg>
         </motion.div>
 
-        <div className="flex mx-auto justify-center text-white text-5xl md:text-7xl flex-wrap font-bold">
+        <div className="flex mx-auto justify-center text-white text-5xl md:text-8xl flex-wrap font-bold">
           {prize.map((char, index) => (
             <motion.div
               key={index}

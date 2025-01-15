@@ -20,7 +20,7 @@ export function EligibilitySection() {
           ))}
         </div>
         <div className="mt-12 p-6 bg-purple-500/10 rounded-lg border border-purple-500/20">
-          <h3 className="text-xl font-semibold mb-4">Note</h3>
+          <h3 className="text-xl font-semibold mb-4">Note :</h3>
           <p className="text-gray-300">
             All skill levels are welcome! Whether you're a beginner or an expert, Hacksagon is the perfect place to learn, 
             collaborate, and build something amazing.
