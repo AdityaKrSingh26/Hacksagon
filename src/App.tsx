@@ -14,7 +14,7 @@ import Awards from "./Pages/Awards/Awards";
 
 function App() {
   return (
-    <div className="bg-gradient-to-br from-indigo-950 via-purple-900 to-violet-950 relative text-white min-w-96">
+    <div className="bg-gradient-to-br from-indigo-950 via-purple-900 to-violet-950 relative text-white">
       <Background />
       <Router>
         <div className="app flex flex-col min-h-screen relative">
