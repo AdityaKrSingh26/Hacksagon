@@ -19,17 +19,18 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="mx-auto w-full px-4 md:px-6 py-4 bg-transparent text-white">
+    <nav className="mx-auto w-full px-4 smd:px-2 py-4 bg-transparent text-white">
       <div className="flex items-center justify-between">
+        {/* Logo */}
         <div className="flex items-center">
           <Link to="/" className="flex items-center space-x-2">
             <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="Logo" />
-            <span className="text-xl md:text-2xl font-bold">Hacksagon</span>
+            <span className="text-xl smd:text-lg md:text-2xl font-bold">Hacksagon</span>
           </Link>
         </div>
 
         {/* Navbar Links for Medium and Larger Screens */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex smd:hidden space-x-8">
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
@@ -47,18 +48,18 @@ export function Navbar() {
         </div>
 
         {/* Register Button for Medium and Larger Screens */}
-        <div className="hidden md:block">
+        <div className="hidden md:block smd:hidden">
           <Link
             to="https://devfolio.co/discover"
             target="_blank"
-            className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors"
+            className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 smd:px-6 py-2 rounded-full transition-colors"
           >
             Register Now
           </Link>
         </div>
 
         {/* Hamburger Menu for Mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden smd:block">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
@@ -73,7 +74,7 @@ export function Navbar() {
       </div>
 
       {/* Register Button for Mobile */}
-      <div className="mt-4 md:hidden">
+      <div className="mt-4 md:hidden smd:block">
         <Link
           to="https://devfolio.co/discover"
           target="_blank"
