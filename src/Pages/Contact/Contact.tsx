@@ -43,7 +43,7 @@ const social = [
 const Contact = () => {
   return (
     <div className="w-2/3 mx-auto flex flex-col">
-      <h1 className="text-5xl mt-10 pb-6 border-b text-center font-bold animate-text">
+      <h1 className="text-5xl mb:text-4x1 mt-10 pb-6 border-b text-center font-bold animate-text">
         {["C", "o", "n", "t", "a", "c", "t", "\u00A0", "U", "s", "!"].map((letter, index) => (
           <span key={index}>{letter}</span>
         ))}

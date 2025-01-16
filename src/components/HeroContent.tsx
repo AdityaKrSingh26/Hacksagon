@@ -73,6 +73,14 @@ export function HeroContent() {
               alt="Innovation"
               className="w-40 sm:w-75 md:w-80 xl:w-180 object-contain md:translate-x-0 xl:translate-x-80 2xl:translate-x-28"
             />
+          </div>      
+        </div>
+
+        <div className="flex items-center my-4 text-gray-300 flex-col md:flex-row text-lg">
+          powered by
+          <div className="flex flex-col sm:flex-row gap-2">
+            <img className="w-72" src="https://i.postimg.cc/d3CDWpY9/ieee-mp-section-cover-removebg-preview.png" alt="IEEE MP section logo" />
+            <img className="w-72" src="https://i.postimg.cc/9fkMCJ8q/ieee-white.png" alt="IEEE student branch of ABV-IIITM logo" />
           </div>
         </div>
 

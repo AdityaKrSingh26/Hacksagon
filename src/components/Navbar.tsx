@@ -1,7 +1,6 @@
 import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from 'react';
-import './Navbar.css';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,62 +19,65 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="container mx-auto px-6 py-6 z-10 text-white">
+    <nav className="mx-auto w-full px-4 md:px-6 py-4 bg-transparent text-white">
       <div className="flex items-center justify-between">
         <div className="flex items-center">
-          <Link to="/" className="flex items-center space-x-1">
-            <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="" />
-            <span className="text-2xl font-bold">Hacksagon</span>
+          <Link to="/" className="flex items-center space-x-2">
+            <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="Logo" />
+            <span className="text-xl md:text-2xl font-bold">Hacksagon</span>
           </Link>
         </div>
 
-       
-        <div className="hidden sm:flex navbar-links">
+        {/* Navbar Links for Medium and Larger Screens */}
+        <div className="hidden md:flex space-x-8">
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
-          <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
-          <Link to="/brochure" className="hover:text-purple-300 transition-colors">Brochure</Link>
-          <Link to="/awards" className='hover:text-purple-300 transition-colors'>Awards</Link>
-          <Link to="/technical_partner" className='hover:text-purple-300 transition-colors'>Partner</Link>
+          <Link to="/awards" className="hover:text-purple-300 hidden xl:block transition-colors">Awards</Link>
+          <Link to="/technical_partner" className="hover:text-purple-300 transition-colors">Partners</Link>
+
+          <div className="relative group">
+            <button className="hover:text-purple-300 transition-colors">More</button>
+            <div className="absolute hidden group-hover:block bg-white bg-opacity-5 shadow-md rounded-md mt-2">
+              <Link to="/brochure" className="block px-4 py-2 hover:text-purple-300">Brochure</Link>
+              <Link to="/contact" className="block px-4 py-2 hover:text-purple-300">Contact us</Link>
+            </div>
+          </div>
         </div>
-       
-        <div className="hidden sm:block">
+
+        {/* Register Button for Medium and Larger Screens */}
+        <div className="hidden md:block">
           <Link
             to="https://devfolio.co/discover"
             target="_blank"
-            className=" register-btn bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center"
+            className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors"
           >
             Register Now
           </Link>
         </div>
 
-        
-        <div className="sm:hidden">
+        {/* Hamburger Menu for Mobile */}
+        <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
           >
             {isOpen ? (
-              <X
-                className={`w-8 h-8 text-white transition-all ${isOpen ? 'rotate-45 scale-110' : 'rotate-0 scale-100'} animate-icon-switch`}
-              />
+              <X className="w-8 h-8 text-white" />
             ) : (
-              <Menu
-                className={`w-8 h-8 text-white transition-all ${isOpen ? 'rotate-0 scale-100' : 'rotate-0 scale-100'} animate-icon-switch`}
-              />
+              <Menu className="w-8 h-8 text-white" />
             )}
           </button>
         </div>
       </div>
 
-      
-      <div className="mt-4 sm:hidden w-full">
+      {/* Register Button for Mobile */}
+      <div className="mt-4 md:hidden">
         <Link
           to="https://devfolio.co/discover"
           target="_blank"
-          className="block bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center w-full"
+          className="block bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full text-center"
         >
           Register Now
         </Link>
@@ -85,16 +87,16 @@ export function Navbar() {
       {isOpen && (
         <div
           ref={dropdownRef}
-          className="sm:hidden flex flex-col items-start space-y-4 mt-4 transition-all duration-500 ease-in-out bg-black bg-opacity-80 p-6 rounded-lg opacity-100 scale-100"
+          className="mt-4 flex flex-col space-y-4 bg-black bg-opacity-80 p-6 rounded-lg"
         >
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
           <Link to="/contact" className="hover:text-purple-300 transition-colors">Contact us</Link>
-          <Link to="/brochure" className='hover:text-purple-300 transition-colors'>Brochure</Link>
-          <Link to="/awards" className='hover:text-purple-300 transition-colors'>Awards</Link>
-          <Link to="/technical_partner" className='hover:text-purple-300 transition-colors'>Partner</Link>
+          <Link to="/brochure" className="hover:text-purple-300 transition-colors">Brochure</Link>
+          <Link to="/awards" className="hover:text-purple-300 transition-colors">Awards</Link>
+          <Link to="/technical_partner" className="hover:text-purple-300 transition-colors">Partners</Link>
         </div>
       )}
     </nav>
