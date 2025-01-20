@@ -39,7 +39,7 @@ export function Navbar() {
 
           <div className="relative group">
             <button className="hover:text-purple-300 transition-colors">More</button>
-            <div className="absolute hidden group-hover:block bg-white bg-opacity-5 shadow-md rounded-md mt-2">
+            <div className="absolute hidden group-hover:block bg-white bg-opacity-5 shadow-md rounded-md">
               <Link to="/brochure" className="block px-4 py-2 hover:text-purple-300">Brochure</Link>
               <Link to="/contact" className="block px-4 py-2 hover:text-purple-300">Contact us</Link>
             </div>
@@ -49,7 +49,7 @@ export function Navbar() {
         {/* Register Button for Medium and Larger Screens */}
         <div className="hidden md:block">
           <Link
-            to="https://devfolio.co/discover"
+            to="https://hacksagon-2025.devfolio.co/overview"
             target="_blank"
             className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors"
           >
@@ -75,7 +75,7 @@ export function Navbar() {
       {/* Register Button for Mobile */}
       <div className="mt-4 md:hidden">
         <Link
-          to="https://devfolio.co/discover"
+          to="https://hacksagon-2025.devfolio.co/overview"
           target="_blank"
           className="block bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full text-center"
         >

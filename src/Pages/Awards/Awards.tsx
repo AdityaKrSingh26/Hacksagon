@@ -2,11 +2,11 @@ import  { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { FaTrophy } from "react-icons/fa6";
 import ConfettiComponent from "../../components/Confetti";
+import { Prizes } from "../../data/Prizes";
 import "./Awards.css";
 
 const Awards = () => {
   const prize = "₹2,50,000".split("");
-  const awards = "Prizes & Rewards".split("");
   const textRef = useRef<SVGTextElement | null>(null);
 
   useEffect(() => {
@@ -29,18 +29,8 @@ const Awards = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full px-2 md:px-4 mx-auto overflow-hidden">
-      <div className="awards-text flex flex-wrap justify-center max-w-full px-2">
-        {awards.map((letter, index) => (
-          <motion.div
-            key={index}
-            initial={{ y: -1500 / (index + 1) }}
-            animate={{ y: 0 }}
-            transition={{ type: "spring" }}
-            className="font-bold text-3xl sm:text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 whitespace-pre"
-          >
-            {letter === " " ? "\u00A0" : letter}
-          </motion.div>
-        ))}
+      <div className="awards-text flex flex-wrap justify-center max-w-full px-2 font-bold text-3xl sm:text-5xl md:text-7xl bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 text-transparent">
+        Prizes & Rewards
       </div>
 
       <div className="pool text-4xl md:text-7xl text-center bg-opacity-25 rounded-md w-full m-2 md:m-4 p-2 md:p-4 min-h-[24rem] flex flex-col justify-evenly bg-white relative">
@@ -66,7 +56,7 @@ const Awards = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
-          className="text-transparent text-stroke-white bg-bottom animate-text-fill bg-clip-text bg-gradient-to-b mb-4 md:mb-8 from-white to-white text-5xl md:text-8xl font-bold bg-no-repeat flex justify-center items-center"
+          className="text-transparent text-stroke-white bg-bottom animate-text-fill bg-clip-text bg-gradient-to-b mb-4 from-white to-white text-5xl md:text-8xl font-bold bg-no-repeat flex justify-center items-center"
         >
           <svg 
             className="w-full h-20 md:h-32 flex justify-center items-center"
@@ -107,7 +97,7 @@ const Awards = () => {
           ))}
 
           <motion.div
-            initial={{ x: -100 }}
+            initial={{ x: -400 }}
             animate={{ x: 0 }}
             transition={{ delay: 2, duration: 1 }}
             className="ml-2"
@@ -115,6 +105,20 @@ const Awards = () => {
             +
           </motion.div>
         </div>
+      </div>
+
+      <div className="mx-auto w-full flex flex-col">
+        {Prizes.map((award, index) => (
+          <div key={index} className="text-4xl md:text-7xl text-center items-center bg-opacity-25 rounded-md w-full mb-4 min-h-min py-4 flex bg-white relative">
+            <img src="../../Images/trophy.webp" alt="Trophy png" className="lg:w-60 lg:h-60 w-32 h-32 mx-12" />
+            <div className="flex flex-col justify-evenly">
+              <div>Cash Prize: {award.cashPrize}</div>
+              <ul>
+                <li className="text-xl">{award.description}</li>
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
 
       <ConfettiComponent />

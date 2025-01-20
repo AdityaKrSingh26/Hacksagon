@@ -49,7 +49,7 @@ export function HeroContent() {
           className="apply-button"
           data-hackathon-slug="hacksagon-2025"
           data-button-theme="light"
-          style={{ height: '44px', width: '312px' }}
+          style={{ height: '12px', width: '312px' }}
         />
 
         <div className="w-full md:w-11/12 flex flex-col md:flex-row items-start md:items-center justify-between">
