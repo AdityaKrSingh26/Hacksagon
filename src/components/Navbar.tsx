@@ -49,13 +49,12 @@ export function Navbar() {
 
         {/* Register Button for Medium and Larger Screens */}
         <div className="hidden md:block smd:hidden">
-          <Link
-            to="https://hacksagon-2025.devfolio.co/overview"
-            target="_blank"
-            className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 smd:px-6 py-2 rounded-full transition-colors"
-          >
-            Register Now
-          </Link>
+          <div
+            className="apply-button"
+            data-hackathon-slug="hacksagon-2025"
+            data-button-theme="light"
+            style={{ height: '42px', width: '312px' }}
+          />
         </div>
 
         {/* Hamburger Menu for Mobile */}

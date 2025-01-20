@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        prizes: ['prizes', 'sans-serif'],
+      },
       screens: {
         smd: '760px', 
         md: '840px',

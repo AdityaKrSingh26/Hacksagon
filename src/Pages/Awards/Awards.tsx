@@ -33,8 +33,8 @@ const Awards = () => {
         Prizes & Rewards
       </div>
 
-      <div className="pool text-4xl md:text-7xl text-center bg-opacity-25 rounded-md w-full m-2 md:m-4 p-2 md:p-4 min-h-[24rem] flex flex-col justify-evenly bg-white relative">
-        {[...Array(6)].map((_, i) => (
+      <div className="pool text-4xl md:text-7xl text-center rounded-md w-full m-2 md:m-4 p-2 md:p-4 min-h-[24rem] flex flex-col justify-evenly">
+        {[...Array(10)].map((_, i) => (
           <motion.div
             key={i}
             className="absolute animate-float text-white hidden md:block"
@@ -70,7 +70,7 @@ const Awards = () => {
               y="50%"
               dominantBaseline="middle"
               textAnchor="middle"
-              className="font-bold text-6xl md:text-8xl"
+              className="font-bold font-prizes text-6xl md:text-8xl"
               style={{
                 fill: 'none',
                 stroke: 'white',
@@ -107,15 +107,16 @@ const Awards = () => {
         </div>
       </div>
 
-      <div className="mx-auto w-full flex flex-col">
-        {Prizes.map((award, index) => (
-          <div key={index} className="text-4xl md:text-7xl text-center items-center bg-opacity-25 rounded-md w-full mb-4 min-h-min py-4 flex bg-white relative">
-            <img src="../../Images/trophy.webp" alt="Trophy png" className="lg:w-60 lg:h-60 w-32 h-32 mx-12" />
-            <div className="flex flex-col justify-evenly">
-              <div>Cash Prize: {award.cashPrize}</div>
-              <ul>
-                <li className="text-xl">{award.description}</li>
-              </ul>
+      <div className="mx-auto w-4/5 md:w-1/2 my-12 flex flex-col gap-4">
+        {Prizes.map((prize, index) => (
+          <div key={index} className="border border-white rounded-md flex p-2">
+            <div className="mr-2">
+              <img src="/Images/trophy.webp" alt="" />
+            </div>
+            <div className="w-full">
+              <p className="ml-8 font-bold text-2xl md:text-4xl">{prize.title}</p>
+              <p className="ml-10">{prize.description}</p>
+              <p>The winning team will receive a cash prize of {prize.cashPrize}</p>
             </div>
           </div>
         ))}

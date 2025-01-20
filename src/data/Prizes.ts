@@ -1,22 +1,17 @@
 export const Prizes = [
   {
-    title: "1st Prize",
-    description: "ebfwk",
-    cashPrize: "60K"
+    title: "Hackathon Winners",
+    description: "Overall winner amongst all tracks",
+    cashPrize: "₹ 40K"
   },
   {
-    title: "2nd Prize",
-    description: "ewver",
-    cashPrize: "30K"
+    title: "Track Winners",
+    description: "Winners of each track (10 tracks)",
+    cashPrize: "₹ 20K"
   },
   {
-    title: "3rd Prize",
-    description: "refre",
-    cashPrize: "15K"
-  },
-  {
-    title: "4th - 10th",
-    description: "The top 10 members will be given exclusive IEEE Goodies, T-Shirt and Certificates",
-    cashPrize: ""
+    title: "Top 10 teams",
+    description: "All the team members in top 10 teams will get exclusive IEEE Goodies, T-Shirt and Certificates.",
+    cashPrize: "67"
   }
 ];
