@@ -11,9 +11,11 @@ const Themes = () => {
         <SoftwareThemes />
         <HardwareThemes />
       </div>
-      <div className="w-2/5 mx-auto bg-white/5 backdrop-blur-sm rounded-xl p-6 text-xl mb-10">
+      <div className="w-[80%] md:w-[65%] mx-auto bg-white/5 backdrop-blur-sm rounded-xl p-6 text-xl">
         <strong>Note: </strong> Please note that the technology stacks and challenge ideas mentioned are not mandatory; they are intended to provide an overview, guide participants in their project development, and inspire their work.
       </div>
+      <br />
+      <br />
     </div>
   );
 };

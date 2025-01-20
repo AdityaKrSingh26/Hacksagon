@@ -24,6 +24,7 @@ function HomePage() {
             <EligibilitySection />
 
             {/* Our Current Sponsors Section */}
+
             <div className="w-full text-center py-16 bg-black/20">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <h1 className="text-9/2xl sm:text-5xl lg:text-6xl mt-10 pb-6 border-b text-center font-bold animate-text mb-12">
@@ -61,10 +62,12 @@ function HomePage() {
                                 />
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
+
     );
 }
 
