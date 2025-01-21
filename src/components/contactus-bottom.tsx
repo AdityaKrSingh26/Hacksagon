@@ -35,45 +35,45 @@ export const ContactSection = () => {
         </div>
 
         <div>
-  <p className="text-sm font-light uppercase mb-2">
-    <span className="ml-3">EXAMPLE: </span>
-    {questions[currentIndex].split("").map((char, idx) => (
-      <motion.span
-        key={`${currentIndex}-${idx}`}
-        className="relative inline-block"
-        initial={{ opacity: 1 }}
-        animate={{ opacity: 0 }}
-        transition={{ delay: 5, duration: 0.3 }}
-        style={{
-          whiteSpace: "pre-wrap", // Preserve whitespaces
-          overflowWrap: "break-word", // Wrap long words
-          wordBreak: "break-word", // Allow word breaking if needed
-        }}
-      >
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: idx * 0.04, duration: 0 }}
-        >
-          {char}
-        </motion.span>
+          <p className="text-sm font-light uppercase mb-2">
+            <span className="ml-3">EXAMPLE: </span>
+            {questions[currentIndex].split("").map((char, idx) => (
+              <motion.span
+                key={`${currentIndex}-${idx}`}
+                className="relative inline-block"
+                initial={{ opacity: 1 }}
+                animate={{ opacity: 0 }}
+                transition={{ delay: 5, duration: 0.3 }}
+                style={{
+                  whiteSpace: "pre-wrap", // Preserve whitespaces
+                  overflowWrap: "break-word", // Wrap long words
+                  wordBreak: "break-word", // Allow word breaking if needed
+                }}
+              >
+                <motion.span
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: idx * 0.04, duration: 0 }}
+                >
+                  {char}
+                </motion.span>
 
-        <motion.span
-          className="absolute bottom-[3px] top-[3px] left-[1px] right-0 bg-white"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 1, 0] }}
-          transition={{
-            delay: idx * 0.04,
-            duration: 0.2,
-            times: [0, 0.2, 1],
-            ease: "easeInOut",
-          }}
-        />
-      </motion.span>
-    ))}
-  </p>
-  <hr className="border-neutral-300" />
-</div>
+                <motion.span
+                  className="absolute bottom-[3px] top-[3px] left-[1px] right-0 bg-white"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: [0, 1, 0] }}
+                  transition={{
+                    delay: idx * 0.04,
+                    duration: 0.2,
+                    times: [0, 0.2, 1],
+                    ease: "easeInOut",
+                  }}
+                />
+              </motion.span>
+            ))}
+          </p>
+          <hr className="border-neutral-300" />
+        </div>
 
 
         {/* Button */}
@@ -84,7 +84,7 @@ export const ContactSection = () => {
         </Link>
 
         <div className="mt-8">
-          <p className="text-lg font-medium w-full border-t py-4">
+          <p className="text-lg font-medium w-full border-b py-4 mb-4">
             <strong>Why waste time?</strong> Register now and compete in central india's largest hackathon
           </p>
           <Link
