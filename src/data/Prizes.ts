@@ -12,6 +12,6 @@ export const Prizes = [
   {
     title: "Top 10 teams",
     description: "All the team members in top 10 teams will get exclusive IEEE Goodies, T-Shirt and Certificates.",
-    cashPrize: "67"
+    cashPrize: ""
   }
 ];

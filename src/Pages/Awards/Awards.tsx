@@ -90,16 +90,16 @@ const Awards = () => {
               key={index}
               initial={{ visibility: "hidden" }}
               animate={{ visibility: "visible" }}
-              transition={{ delay: index / prize.length + 2, duration: 1 }}
+              transition={{ delay: index / prize.length + 1.5, duration: 1 }}
             >
               {char}
             </motion.div>
           ))}
 
           <motion.div
-            initial={{ x: -400 }}
+            initial={{ x: -1200 }}
             animate={{ x: 0 }}
-            transition={{ delay: 2, duration: 1 }}
+            transition={{ duration: 3 }}
             className="ml-2"
           >
             +
@@ -107,16 +107,18 @@ const Awards = () => {
         </div>
       </div>
 
+      <div className="w-full border"/>
+
       <div className="mx-auto w-4/5 md:w-1/2 my-12 flex flex-col gap-4">
         {Prizes.map((prize, index) => (
-          <div key={index} className="border border-white rounded-md flex p-2">
+          <div key={index} className="border border-white rounded-md flex p-2 gap-8">
             <div className="mr-2">
               <img src="/Images/trophy.webp" alt="" />
             </div>
             <div className="w-full">
-              <p className="ml-8 font-bold text-2xl md:text-4xl">{prize.title}</p>
-              <p className="ml-10">{prize.description}</p>
-              <p>The winning team will receive a cash prize of {prize.cashPrize}</p>
+              <p className="font-bold text-2xl md:text-4xl bg-clip-text text-transparent bg-[#32CD32]">{prize.title}</p>
+              <p>- {prize.description}</p>
+              {prize.cashPrize != "" && <p>- The winning team will receive a cash prize of {prize.cashPrize}</p>}
             </div>
           </div>
         ))}

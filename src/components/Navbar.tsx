@@ -23,7 +23,7 @@ export function Navbar() {
       <div className="flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 ml-4">
             <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="Logo" />
             <span className="text-xl smd:text-lg md:text-2xl font-bold">Hacksagon</span>
           </Link>
