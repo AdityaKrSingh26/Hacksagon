@@ -76,6 +76,7 @@ export const ContactSection = () => {
         </div>
 
 
+
         {/* Button */}
         <Link to="/contact">
           <button className="w-full py-2 mt-6 text-sm font-medium border rounded-full transition hover:bg-white/15">
@@ -85,6 +86,7 @@ export const ContactSection = () => {
 
         <div className="mt-8">
           <p className="text-lg font-medium w-full border-b py-4 mb-4">
+
             <strong>Why waste time?</strong> Register now and compete in central india's largest hackathon
           </p>
           <Link
