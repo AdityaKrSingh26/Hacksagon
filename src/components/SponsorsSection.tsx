@@ -64,6 +64,7 @@ const sponsorLogos = [
 import DevfolioLogo from "../images/Devfolio.png";
 import EthIndia from "../images/ETHIndia.png";
 import Polygon from "../images/polygon.png"
+import xyz from "../images/xyz.png"
 
 export const SponsorsSection: React.FC = () => {
   return (
@@ -144,7 +145,15 @@ export const SponsorsSection: React.FC = () => {
                 className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
               />
             </div>
-
+            <div
+              className="flex justify-center items-center bg-white p-4 rounded-lg shadow-md cursor-pointer hover:scale-110 transition-transform duration-300"
+            >
+              <img
+                src={xyz}
+                alt=".xyz"
+                className="w-full h-full object-contain max-w-[200px] max-h-[120px]"
+              />
+            </div>
           </div>
         </div>
       </div>
