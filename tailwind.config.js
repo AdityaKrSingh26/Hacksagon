@@ -3,6 +3,13 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        prizes: ['prizes', 'sans-serif'],
+      },
+      screens: {
+        smd: '760px', 
+        md: '840px',
+      },
       animation: {
         'fade-in-bounce': 'fadeIn 1s ease-out, bounce 0.5s ease-out',
         'text-fill': 'fillFromBottom 2s ease-in-out forwards',
@@ -29,7 +36,7 @@ export default {
         fillFromBottom: {
           '0%': { 'background-size': '100% 0%' },
           '100%': { 'background-size': '100% 100%' },
-        }
+        },
       },
     },
   },

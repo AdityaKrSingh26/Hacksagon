@@ -19,27 +19,29 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="mx-auto w-full px-4 md:px-6 py-4 bg-transparent text-white">
+    <nav className="mx-auto w-full px-4 smd:px-2 py-4 bg-transparent text-white">
       <div className="flex items-center justify-between">
+        {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 ml-4">
             <img className="w-6" src="https://i.postimg.cc/cCT9dGfv/Hacksagon-white.png" alt="Logo" />
-            <span className="text-xl md:text-2xl font-bold">Hacksagon</span>
+            <span className="text-xl smd:text-lg md:text-2xl font-bold">Hacksagon</span>
           </Link>
         </div>
 
         {/* Navbar Links for Medium and Larger Screens */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex smd:hidden space-x-8">
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
-          <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
-          <Link to="/awards" className="hover:text-purple-300 hidden xl:block transition-colors">Awards</Link>
+          <Link to="/schedule" className="hover:text-purple-300 transition-colors">Schedule</Link>
           <Link to="/technical_partner" className="hover:text-purple-300 transition-colors">Partners</Link>
+          <Link to="/commitee" className="hover:text-purple-300 transition-colors">Commitee</Link>
 
           <div className="relative group">
             <button className="hover:text-purple-300 transition-colors">More</button>
-            <div className="absolute hidden group-hover:block bg-white bg-opacity-5 shadow-md rounded-md mt-2">
+            <div className="absolute hidden group-hover:flex flex-col z-50 hover:block bg-white bg-opacity-5 shadow-md rounded-md">
+              <Link to="/awards" className="block px-4 py-2 hover:text-purple-300">Awards</Link>
               <Link to="/brochure" className="block px-4 py-2 hover:text-purple-300">Brochure</Link>
               <Link to="/contact" className="block px-4 py-2 hover:text-purple-300">Contact us</Link>
             </div>
@@ -47,18 +49,17 @@ export function Navbar() {
         </div>
 
         {/* Register Button for Medium and Larger Screens */}
-        <div className="hidden md:block">
-          <Link
-            to="https://devfolio.co/discover"
-            target="_blank"
-            className="bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full transition-colors"
-          >
-            Register Now
-          </Link>
+        <div className="hidden md:block smd:hidden">
+          <div
+            className="apply-button"
+            data-hackathon-slug="hacksagon-2025"
+            data-button-theme="light"
+            style={{ height: '42px', width: '312px' }}
+          />
         </div>
 
         {/* Hamburger Menu for Mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden smd:block">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
@@ -73,14 +74,13 @@ export function Navbar() {
       </div>
 
       {/* Register Button for Mobile */}
-      <div className="mt-4 md:hidden">
-        <Link
-          to="https://devfolio.co/discover"
-          target="_blank"
-          className="block bg-purple-500 hover:bg-purple-600 text-white font-semibold px-6 py-2 rounded-full text-center"
-        >
-          Register Now
-        </Link>
+      <div className="mt-4 md:hidden smd:block flex justify-center">
+        <div
+          className="apply-button"
+          data-hackathon-slug="hacksagon-2025"
+          data-button-theme="light"
+          style={{ height: '42px', width: '312px' }}
+        />
       </div>
 
       {/* Dropdown Menu for Mobile */}
@@ -97,6 +97,7 @@ export function Navbar() {
           <Link to="/brochure" className="hover:text-purple-300 transition-colors">Brochure</Link>
           <Link to="/awards" className="hover:text-purple-300 transition-colors">Awards</Link>
           <Link to="/technical_partner" className="hover:text-purple-300 transition-colors">Partners</Link>
+          <Link to="/commitee" className="hover:text-purple-300 transition-colors">Commitee</Link>
         </div>
       )}
     </nav>

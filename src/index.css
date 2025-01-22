@@ -46,6 +46,12 @@
   to { width: 100% }
 }
 
+@font-face {
+  font-family: 'prizes';
+  src: url('/public/Fonts/prizes-font.ttf') format('truetype');
+}
+
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }

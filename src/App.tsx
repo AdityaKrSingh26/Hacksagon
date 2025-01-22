@@ -11,6 +11,7 @@ import Schedule from "./Pages/Schedule/Schedule"
 import { PdfViewer } from "./components/PdfViewer";
 import { Technical } from "./Pages/TechnicalPartner/Technical_partner";
 import Awards from "./Pages/Awards/Awards";
+import Commitee from "./Pages/Commitee/Commitee";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/brochure" element ={<PdfViewer/>}/>
               <Route path="/technical_partner" element={<Technical/>}/>
               <Route path="/awards" element={<Awards/>}/>
+              <Route path="/commitee" element={<Commitee/>}/>
             </Routes>
           </div>
           <Footer />

@@ -45,12 +45,7 @@ export function HeroContent() {
         className={`max-w-5xl transition-all duration-1000 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}
       >
-        <div
-          className="apply-button"
-          data-hackathon-slug="hacksagon-2025"
-          data-button-theme="light"
-          style={{ height: '44px', width: '312px' }}
-        />
+        
 
         <div className="w-full md:w-11/12 flex flex-col md:flex-row items-start md:items-center justify-between">
           <div className="w-full md:w-1/2">
@@ -99,12 +94,7 @@ export function HeroContent() {
           >
             Learn More
           </button>
-          <div
-            className="apply-button"
-            data-hackathon-slug="hacksagon-2025"
-            data-button-theme="light"
-            style={{ height: '44px', width: '312px' }}
-          />
+        
 
         </div>
 

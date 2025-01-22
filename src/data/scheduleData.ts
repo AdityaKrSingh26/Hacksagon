@@ -3,13 +3,13 @@ import { Rocket, Users, Lightbulb, Code, Award, Flag, Clipboard, Video } from 'l
 export const schedulePhases = [
   {
     phase: "Phase 1.1: Registration & Idea Submission",
-    date: "20th Jan 2025 to 20th Feb 2025",
+    date: "15th Jan 2025 to 20th Feb 2025",
     icon: Clipboard,
     description: "Begin your journey by registering and forming your team with peers. Submit your project idea in PDF/PPT format given by organising team.",
     events: [
       {
         title: "Registration Opens",
-        date: "Jan 20",
+        date: "Jan 15",
         description: "Registration opens for individuals and cross-university teams"
       },
       {
