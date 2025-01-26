@@ -113,7 +113,7 @@ const Awards = () => {
         {Prizes.map((prize, index) => (
           <div key={index} className="border border-white rounded-md flex p-2 gap-8">
             <div className="mr-2">
-              <img src="/Images/trophy.webp" alt="" />
+              <img src="/Images/add_img/trophy.webp" alt="" />
             </div>
             <div className="w-full">
               <p className="font-bold text-2xl md:text-4xl bg-clip-text text-transparent bg-[#32CD32]">{prize.title}</p>
