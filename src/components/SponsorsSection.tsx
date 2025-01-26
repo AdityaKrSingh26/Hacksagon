@@ -61,10 +61,10 @@ const sponsorLogos = [
   "https://i.postimg.cc/Kzczpdwn/codingblok.jpg"
 ];
 
-import DevfolioLogo from "../images/Devfolio.png";
-import EthIndia from "../images/ETHIndia.png";
-import Polygon from "../images/polygon.png"
-import xyz from "../images/xyz.png"
+import DevfolioLogo from "../../Images/logos/Devfolio.png";
+import EthIndia from "../../Images/logos/ETHIndia.png";
+import Polygon from "../../Images/logos/polygon.png"
+import xyz from "../../Images/logos/xyz.png"
 
 export const SponsorsSection: React.FC = () => {
   return (
