@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import DevfolioLogo from "../../images/Devfolio_Logo-Colored.png";
 import EthIndia from "../../images/ethindia-dark.png";
 import Polygon from "../../images/Polygon_Logo-Dark@2x.png"
+import xyz from  "../../images/xyz.png"
 
 function HomePage() {
     useEffect(() => {
@@ -34,13 +35,13 @@ function HomePage() {
                             </span>
                         ))}
                     </h1>
-                    <div className="flex flex-wrap justify-center items-center gap-8 sm:gap-12 mt-12">
+                    <div className="flex justify-center items-center gap-8 sm:gap-12 mt-12">
                         <div className="w-full sm:w-2/5 md:w-1/3 lg:w-1/4 max-w-[250px] min-w-[200px] bg-white p-6 rounded-lg shadow-lg transform hover:scale-110 transition-all duration-300 ease-in-out">
                             <div className="aspect-w-16 aspect-h-9 flex items-center justify-center">
                                 <img
                                     src={DevfolioLogo}
                                     alt="DEVFOLIO LOGO"
-                                    className="w-full h-auto object-contain"
+                                    className="w-full h-[40px] object-contain"
                                 />
                             </div>
                         </div>
@@ -49,7 +50,7 @@ function HomePage() {
                                 <img
                                     src={EthIndia}
                                     alt="ETHINDIA LOGO"
-                                    className="w-full h-auto object-contain"
+                                    className="w-full h-[40px] object-contain"
                                 />
                             </div>
                         </div>
@@ -58,11 +59,19 @@ function HomePage() {
                                 <img
                                     src={Polygon}
                                     alt="POLYGON LOGO"
-                                    className="w-full h-auto object-contain"
+                                    className="w-full h-[40px] object-contain"
                                 />
                             </div>
                         </div>
-
+                        <div className="w-full sm:w-2/5 md:w-1/3 lg:w-1/4 max-w-[250px] min-w-[200px] bg-white p-6 rounded-lg shadow-lg transform hover:scale-110 transition-all duration-300 ease-in-out">
+                            <div className="aspect-w-16 aspect-h-9 flex items-center justify-center">
+                                <img
+                                    src={xyz}
+                                    alt=".xyz LOGO"
+                                    className="w-full h-[40px] object-contain"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
