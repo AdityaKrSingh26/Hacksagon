@@ -11,7 +11,7 @@ const Commitee = () => {
         <h1 className="text-center text-5xl font-thin">To be revealed soon</h1>
       </div>
 
-      <div className="lg:w-2/3 w-full mx-auto my-4">
+      <div className="lg:w-2/3 w-full mx-auto my-10">
         <h1 className="text-4xl text-yellow-500 mb-4">Organising Commitee</h1>
         <div className="flex gap-12">
           {OrganisingCommitee.map((member, index) => (

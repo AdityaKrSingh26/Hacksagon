@@ -19,7 +19,7 @@ const contacts = [
     name: "Arihant Yadav",
     phone: "+91 6388928800",
     email: "bcs_2023011@iiitm.ac.in",
-    path: "https://i.postimg.cc/wTT403dL/advait.jpg",
+    path: "https://i.postimg.cc/P5jtVFg9/arihant.jpg",
     pos: "Vice - Secretary"
   },
   {
@@ -55,7 +55,7 @@ const Contact = () => {
             <br />
             <li className="ml-4 md:m-0 mb-4">
               <p className="font-medium">IEEE Student Branch of ABV-IIITM</p>
-              <p>Email: <a href="mailto:ieeestudentbranch@iiitm.ac.in" className="underline">ieee@iiitm.ac.in</a></p>
+              <p>Email: <a href="mailto:ieeestudentbranch@iiitm.ac.in" className="underline">ieeestudentbranch@iiitm.ac.in</a></p>
               <p>Address: 2nd Floor G-Block, <br />Atal Bihari Vajpayee Indian Institute of Information Technology and Management Gwalior, Madhya Pradesh – 474015</p>
             </li>
           </ul>

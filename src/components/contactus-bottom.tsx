@@ -90,7 +90,7 @@ export const ContactSection = () => {
             <strong>Why waste time?</strong> Register now and compete in central india's largest hackathon
           </p>
           <Link
-            to="https://unstop.com/"
+            to="https://hacksagon-2025.devfolio.co/overview"
             target="_blank"
             className="block bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center w-full"
           >
