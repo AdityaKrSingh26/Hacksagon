@@ -1,8 +1,7 @@
 export const Patrons = [
   {
-    name: "xxx",
-    description: "xxx",
-    role: "xxx",
-    imgUrl: "xxx"
+    name: "Dr. M.V. Kartikeyan",
+    description: "Director, IIITDM Kanchipuram, India",
+    imgUrl: "https://i.postimg.cc/mtFmWm5t/iiitdm-director.webp"
   }
 ];

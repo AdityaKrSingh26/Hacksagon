@@ -1,12 +1,12 @@
 export const OrganisingCommitee = [
   {
     name: "Dr. Somesh Kumar",
-    description: "ASSISTANT PROFESSOR, IEEE STUDENT BRANCH COUNSELOR, ABV-IIITM GWALIOR, INDIA",
-    imgUrl: "https://iili.io/2iUmlEu.jpg"
+    description: "Assistant professor, IEEE Student Branch Counselor, ABV-IIITM Gwalior, India",
+    imgUrl: "https://i.postimg.cc/TLC4hhV1/somesh-Sir.jpg"
   },
   {
     name: "Dr. Pinku Ranjan",
-    description: "ASSISTANT PROFESSOR, ABV-IIITM GWALIOR, INDIA",
-    imgUrl: "https://iili.io/2igom0v.jpg"
+    description: "Assistant professor, ABV-IIITM Gwalior, India",
+    imgUrl: "https://i.postimg.cc/mzbnb7FK/pinku-sir.jpg"
   }
 ];
