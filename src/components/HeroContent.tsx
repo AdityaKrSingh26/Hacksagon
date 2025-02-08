@@ -71,14 +71,6 @@ export function HeroContent() {
           </div>      
         </div>
 
-        <div className="flex items-center my-4 text-gray-300 flex-col md:flex-row text-lg">
-          powered by
-          <div className="flex flex-col sm:flex-row gap-2">
-            <img className="w-72" src="https://i.postimg.cc/d3CDWpY9/ieee-mp-section-cover-removebg-preview.png" alt="IEEE MP section logo" />
-            <img className="w-72" src="https://i.postimg.cc/9fkMCJ8q/ieee-white.png" alt="IEEE student branch of ABV-IIITM logo" />
-          </div>
-        </div>
-
         <p className="text-base max-w-3xl sm:text-lg md:text-xl mb-6 sm:mb-8 text-gray-300 leading-relaxed">
           Join 300+ hackers for 36 hours of creation, innovation, and
           breakthrough solutions. Build the future at the intersection of

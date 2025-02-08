@@ -3,6 +3,7 @@ import { ThemeSection } from '../../components/ThemeSection';
 import { ProcessFlow } from '../../components/ProcessFlow';
 import { Prizes } from '../../components/Prizes';
 import { EligibilitySection } from '../../components/EligibilitySection';
+import Partners from '../../components/Partners';
 import { useEffect } from 'react';
 
 import DevfolioLogo from "../../../Images/logos/Devfolio.png";
@@ -19,6 +20,7 @@ function HomePage() {
             <div className="relative min-h-screen flex flex-col">
                 <HeroContent />
             </div>
+            <Partners />
             <ThemeSection />
             <Prizes />
             <ProcessFlow />
