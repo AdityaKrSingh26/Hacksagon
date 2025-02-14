@@ -2,8 +2,8 @@ export const S_Tracks = [
   {
     icon: "FolderCode",
     title: "Web Development Track",
-    description: "Develop innovative web applications providing engaging user experiences with advanced features like real-time data processing, responsive design, and microservices.",
-    objective: "To develop innovative web applications that provide engaging user experiences, leverage modern technologies, and incorporate advanced features like real-time data processing, responsive design, and microservices architecture.",
+    description: "Develop web apps providing great user experiences with features like real-time data processing , responsive design.",
+    objective: "To develop innovative web applications that provide engaging user experiences, leverage modern technologies, and incorporate advanced features like real-time data processing and responsive design .",
     techStack: [
       "Front-end: HTML, CSS, JavaScript (ES6+), React/Angular, Tailwind CSS/SCSS, WebSockets",
       "Back-end: Node.js, Express.js, MongoDB/PostgreSQL, RESTful APIs/GraphQL",
@@ -33,8 +33,8 @@ export const S_Tracks = [
   },
   {
     icon: "ChartSpline",
-    title: "Data Science & Machine Learning Track",
-    description: "Create predictive models and implement sophisticated machine learning algorithms to address real-world problems.",
+    title: "Data Science & Machine Learning ",
+    description: "Create predictive models and implement sophisticated machine learning algorithms to solve real-world problems.",
     objective: "To create predictive models, analyze large datasets, and implement sophisticated machine learning algorithms that can address real-world problems.",
     techStack: [
       "Programming: Python, NumPy, Pandas, Scikit-Learn, TensorFlow, PyTorch",
@@ -51,7 +51,7 @@ export const S_Tracks = [
   {
     icon: "Layers",
     title: "Blockchain & Cryptography Track",
-    description: "Explore blockchain, smart contracts, and cryptographic techniques for security, scalability, and decentralization.",
+    description: "Explore blockchain, contracts, and cryptographic techniques for security, scalability, and decentralization.",
     objective: "To explore the implementation of blockchain technology, smart contracts, and cryptographic techniques in real-world applications, ensuring security, scalability, and decentralization.",
     techStack: [
       "Blockchain: Ethereum, Hyperledger, Solidity, Truffle, Remix",

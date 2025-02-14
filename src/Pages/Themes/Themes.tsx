@@ -15,6 +15,7 @@ const Themes = () => {
       <div className="w-[80%] md:w-[65%] flex flex-col mx-auto bg-white/5 backdrop-blur-sm rounded-xl p-6 text-xl">
         <strong>Note: </strong> Please note that the technology stacks and challenge ideas mentioned are not mandatory; they are intended to provide an overview, guide participants in their project development, and inspire their work.
         <br />
+        <br />
         <Link to="https://bit.ly/hacksagon-template" className="mx-auto rounded-full p-3 bg-purple-500 hover:bg-purple-600 px-6 py-2  font-semibold transition-colors ">PPT Template</Link>
       </div>
       <br />

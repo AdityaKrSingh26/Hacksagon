@@ -11,7 +11,7 @@ export const TechnicalPartners = [
   },
   {
     name: "IEEE Student Branch of ABV-IIITM",
-    img: "https://i.postimg.cc/WzJJkLm3/ieee-black.png",
+    img: "https://lh3.googleusercontent.com/d/1YUMnL6PVQH5gI-bC72-AprkaUP01ejev",
     desc: "The ABV-IIITM IEEE Student Branch, established in 2019, is a dynamic platform that connects academia and industry. Through workshops, seminars, and competitions, it provides students with hands-on experience, enhancing their technical skills and preparing them for challenges."
   },
   {
