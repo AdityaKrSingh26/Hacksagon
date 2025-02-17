@@ -30,7 +30,7 @@ export function Navbar() {
         </div>
 
         {/* Navbar Links for Medium and Larger Screens */}
-        <div className="hidden md:flex smd:hidden space-x-8">
+        <div className="hidden lg:flex space-x-8">
           <Link to="/about" className="hover:text-purple-300 transition-colors">About</Link>
           <Link to="/themes" className="hover:text-purple-300 transition-colors">Themes</Link>
           <Link to="/sponsors" className="hover:text-purple-300 transition-colors">Sponsors</Link>
@@ -49,17 +49,18 @@ export function Navbar() {
         </div>
 
         {/* Register Button for Medium and Larger Screens */}
-        <div className="hidden md:block smd:hidden">
-          <div
-            className="apply-button"
-            data-hackathon-slug="hacksagon-2025"
-            data-button-theme="light"
-            style={{ height: '42px', width: '312px' }}
-          />
+        <div className="hidden lg:block">
+          <Link
+            to="https://unstop.com/o/gTXzetj?utm_medium=Share&utm_source=shortUrl"
+            target="_blank"
+            className="block bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center w-full"
+          >
+            Register Now
+          </Link>
         </div>
 
         {/* Hamburger Menu for Mobile */}
-        <div className="md:hidden smd:block">
+        <div className="lg:hidden block">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="focus:outline-none"
@@ -74,13 +75,14 @@ export function Navbar() {
       </div>
 
       {/* Register Button for Mobile */}
-      <div className="mt-4 md:hidden smd:block flex justify-center">
-        <div
-          className="apply-button"
-          data-hackathon-slug="hacksagon-2025"
-          data-button-theme="light"
-          style={{ height: '42px', width: '312px' }}
-        />
+      <div className="mt-4 lg:hidden flex justify-center">
+        <Link
+          to="https://unstop.com/o/gTXzetj?utm_medium=Share&utm_source=shortUrl"
+          target="_blank"
+          className="block bg-purple-500 hover:bg-purple-600 px-6 py-2 rounded-full font-semibold transition-colors text-center w-full"
+        >
+          Register Now
+        </Link>
       </div>
 
       {/* Dropdown Menu for Mobile */}
