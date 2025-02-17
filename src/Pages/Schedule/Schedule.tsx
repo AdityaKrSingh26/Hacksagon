@@ -32,8 +32,8 @@ export default function SchedulePage() {
         <div className='flex w-full justify-center mt-20'>
         <button
             className="group relative px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold text-sm sm:text-lg transition-all duration-300 transform hover:scale-105 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500" >
-            <a href="https://hacksagon-2025.devfolio.co/overview">
-              <span className="relative z-10">Registrations now</span>
+            <a href="https://unstop.com/o/gTXzetj?utm_medium=Share&utm_source=shortUrl">
+              <span className="relative z-10">Register now</span>
               <div className="absolute inset-0 rounded-full bg-white/20 blur opacity-0 group-hover:opacity-100 transition-opacity"></div>
             </a>
           </button>
