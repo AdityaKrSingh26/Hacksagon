@@ -14,7 +14,7 @@ export const schedulePhases = [
       },
       {
         title: "Registration Deadline",
-        date: "Feb 20",
+        date: "Mar 28",
         description: "Last day to submit your project idea in PDF/PPT format given by organising team"
       }
     ]
