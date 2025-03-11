@@ -20,7 +20,7 @@ export const H_Tracks = [
   {
     icon: "HeartPulse",
     title: "IoT-Enabled Healthcare and Assistive Technologies",
-    description: "Revolutionize healthcare with tools for diagnosis, delivery, and assistive technologies for people with disabilities.",
+    description: "Revolutionize healthcare with tools for diagnosis, delivery, and assistive technologies.",
     objective: "To create innovative tools that improve healthcare delivery, enable early diagnosis, and assist individuals with disabilities.",
     techStack: [
       "Hardware: Wearables, Raspberry Pi, Arduino, ECG, SpO2 sensors",
@@ -52,7 +52,7 @@ export const H_Tracks = [
   {
     icon: "TriangleAlert",
     title: "Disaster Management and Emergency Response",
-    description: "Develop tools and systems to enhance preparedness, response, and recovery during emergencies and disasters.",
+    description: "Develop tools and systems to enhance preparedness, response, and recovery.",
     objective: "To create tools and systems that improve disaster preparedness, response, and recovery.",
     techStack: [
       "Hardware: Drones, IoT sensors, GPS trackers",
