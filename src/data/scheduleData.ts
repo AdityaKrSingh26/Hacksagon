@@ -38,8 +38,8 @@ export const schedulePhases = [
     ]
   },
   {
-    phase: "Phase 2.1: Registration of Round 2",
-    date: "4th Apr 2025- 10th Apr 2025",
+    phase: "Phase 2.1: Video Submission Round",
+    date: "4th Apr 2025- 11th Apr 2025",
     icon: Users,
     description: "",
     events: [
@@ -56,25 +56,7 @@ export const schedulePhases = [
     ]
   },
   {
-    phase: "Phase 2.2: Presentation at IIITM in online/offline mode",
-    date: "2nd/3rd week of Apr (Tentative)",
-    icon: Video,
-    description: "",
-    events: [
-      {
-        title: "Date & Time Announcement",
-        date: "",
-        description: "Mails will be sent to leaders of team for their video call presentation"
-      },
-      {
-        title: "Presentations",
-        date: "",
-        description: "Meeting link will be shared on the day of presentation"
-      }
-    ]
-  },
-  {
-    phase: "Phase 2.3: Results of Round 2",
+    phase: "Phase 2.2: Results of Round 2",
     date: "20th Apr 2024 (Tentative)",
     icon: Rocket,
     description: "",
@@ -106,20 +88,20 @@ export const schedulePhases = [
   },
   {
     phase: "Phase 3.2: Prototype Round at IIITM",
-    date: "15th May 2025 (Tentative)",
+    date: "9-11th May 2025",
     icon: Code,
     description: "",
     events: [
       {
         title: "36hr Hackathon Sprint",
-        date: "May 15",
+        date: "May 9-11",
         description: "Teams will come and work on their projects getting it ready for final presentation"
       }
     ]
   },
   {
     phase: "Phase 3.3: Final Result",
-    date: "16th May 2025 (Tentative)",
+    date: "12th May 2025 ",
     icon: Award,
     description: "Release of final Results and Distribution of Prizes",
     events: []
