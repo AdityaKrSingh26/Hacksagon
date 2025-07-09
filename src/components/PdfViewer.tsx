@@ -22,7 +22,7 @@ export function PdfViewer() {
         </div>
         <div style={{ height: "75vh", width: "75%" }}>   
           <iframe
-            src="https://jmp.sh/soq0WJrT"
+            src="https://jmp.sh/6VvH4tP7"
             title="PDF Viewer"
             width="100%"
             height="100%"
